@@ -1,0 +1,127 @@
+main:
+  - title: "Download"
+    url: /download/
+  - title: "Tutorials"
+    url: /tutorials/
+  - title: "Examples"
+    url: /examples/
+  - title: "Documentation"
+    url: /documentation/
+  - title: "References"
+    url: /references/
+  - title: "About"
+    url: /about/
+
+sidebar-downloads:
+  - title: "Latest release"
+    url: /download/#latest-release
+  - title: "Installation"
+    url: /download/#installation
+  - title: "License"
+    url: /download/#license
+
+sidebar-references:
+
+sidebar-about:
+  - title: "Authors"
+    url: /about/#authors
+  - title: "Contact"
+    url: /about/#contact
+  - title: "Acknowledgments"
+    url: /about/#acknowledgments
+
+sidebar-documentation:
+  - title: "Control"
+    url: documentation/#control
+    children:
+      - title: "LTI"
+        url: documentation/#lti-systems
+      - title: "LTV"
+        url: documentation/#ltv-systems
+  - title: "Estimation"
+    url: documentation/#estimation
+    children:
+      - title: "LTI"
+        url: documentation/#lti-systems-1
+      - title: "LTV"
+        url: documentation/#ltv-systems-1
+  - title: "Installation"
+    url: documentation/#installation
+
+sidebar-tutorials:
+  - title: "Control"
+    url: tutorials/#control
+    children:
+      - title: "LTI"
+        url: tutorials/#lti-systems
+      - title: "LTV"
+        url: tutorials/#ltv-systems
+  - title: "Estimation"
+    url: tutorials/#estimation
+    children:
+      - title: "LTI"
+        url: tutorials/#lti-systems-1
+      - title: "LTV"
+        url: tutorials/#ltv-systems-1
+  - title: "Installation"
+    url: tutorials/#introduction
+
+sidebar-examples:
+  - title: "Control"
+    url: examples/#control
+    children:
+      - title: "LTI"
+        url: examples/#lti-systems
+      - title: "LTV"
+        url: examples/#ltv-systems
+  - title: "Estimation"
+    url: examples/#estimation
+    children:
+      - title: "LTI"
+        url: examples/#lti-systems-1
+      - title: "LTV"
+        url: examples/#ltv-systems-1
+
+sidebar-kalmanCentralizedLTI:
+  - title: "Sintax"
+    url: "documentation/kalmanCentralizedLTI/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanCentralizedLTI/#description"
+  - title: "Input Arguments"
+    url: "documentation/kalmanCentralizedLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanCentralizedLTI/#output-arguments"
+
+sidebar-kalmanOneStepLTI:
+  - title: "Sintax"
+    url: "documentation/kalmanOneStepLTI/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanOneStepLTI/#description"
+  - title: "Input Arguments"
+    url: "documentation/kalmanOneStepLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanOneStepLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/kalmanOneStepLTI/#examples"
+  - title: "References"
+    url: "documentation/kalmanOneStepLTI/#references"
+
+sidebar-kalmanFiniteHorizonLTI:
+  - title: "Sintax"
+    url: "documentation/kalmanFiniteHorizonLTI/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanFiniteHorizonLTI/#description"
+  - title: "Input Arguments"
+    url: "documentation/kalmanFiniteHorizonLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanFiniteHorizonLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/kalmanFiniteHorizonLTI/#examples"
+  - title: "References"
+    url: "documentation/kalmanFiniteHorizonLTI/#references"
+
+sidebar-testDECENTER:
+  - title: "Sintax"
+    url: "documentation/testDECENTER/#sintax"
+  - title: "Description"
+    url: "documentation/testDECENTER/#description"

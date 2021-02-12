@@ -1,0 +1,8 @@
+
+
+About
+- Mais autores? Ou só nós que fizemos a biblioteca?
+- Não encontro o orcid
+
+
+Commands em yaml com tags para separar em categorias

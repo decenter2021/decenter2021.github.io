@@ -1,0 +1,12 @@
+---
+layout: splash
+title: "DECENTER"
+excerpt: "Distributed control and estimation toolbox for MATLAB"
+header:
+  overlay_image: assets/img/network-4556932.jpg
+  overlay_filter: 0.1 # same as adding an opacity of 0.5 to a black background
+  #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "Download"
+      url: "https://github.com/LeonardoPedroso/DECENTER-toolbox/archive/v0.1.1.zip"
+---
