@@ -10,7 +10,7 @@ sidebar:
 Latest release
 =====
 {% for release in site.data.latest-release %}[Download latest DECENTER release ({{release.tag}})]({{release.urlZip}}){: .btn .btn--info}{% break %}{% endfor %}
-<br>Older releases can be found [here](https://github.com/LeonardoPedroso/DECENTER_toolbox/releases).
+<br>Older releases can be found [here](https://github.com/decenter2021/decenter/releases/).
 
 <hr>
 Installation

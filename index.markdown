@@ -9,7 +9,7 @@ header:
   #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   actions:
     - label: "Download"
-      url: "https://github.com/LeonardoPedroso/DECENTER-toolbox/archive/v0.1.1.zip"
+      url: "https://github.com/decenter2021/decenter/archive/v1.0.0.zip"
 ---
 
 <div class="grid__wrapper">
