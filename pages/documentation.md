@@ -12,6 +12,7 @@ sidebar:
 #### LTI systems
 {% for command in site.data.documentationControlLTI %}[{{command.name}}]({{command.url}}){% unless command.last %}, {% endunless %}{% endfor %}
 #### LTV systems
+To be added soon...
 {% for command in site.data.documentationControlLTV %}[{{command.name}}]({{command.url}}){% unless command.last %}, {% endunless %}{% endfor %}
 
 ***
@@ -19,7 +20,13 @@ sidebar:
 #### LTI systems
 {% for command in site.data.documentationEstimationLTI %}[{{command.name}}]({{command.url}}){% unless command.last %}, {% endunless %}{% endfor %}
 #### LTV systems
+To be added soon...
 {% for command in site.data.documentationEstimationLTV %}[{{command.name}}]({{command.url}}){% unless command.last %}, {% endunless %}{% endfor %}
+
+***
+
+# Solvers
+{% for command in site.data.documentationSolvers %}[{{command.name}}]({{command.url}}){% unless command.last %}, {% endunless %}{% endfor %}
 
 ***
 

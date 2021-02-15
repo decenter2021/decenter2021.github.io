@@ -81,7 +81,7 @@ where $\mathbf{P}_{\infty}$ is the **steady-state estimation error covariance ma
 - ```opts```: struct of **optional** arguments (**assumes default** value for each parameter which is not assigned by the user)
   - ```epsl```: minimum relative improvement on the objective function of the optimization problem (default: ```opts.epsl = 1e-5```)
   {: .text-justify}
-  - ```findWindowLength```: if enabled iterates through window length values until convergence is reached (default: ```opts.findWindowLength = true```)
+  - ```findWindowLength```: if enabled iterates through window length values until convergence is reached (default: ```opts.findWindowLength = false```)
   {: .text-justify}
   - ```W```: if findWindowLength is enabled ```opts.W``` is the starting value of the window length, otherwise it is the single value of the finite window length for which convergence is sought (default: ```opts.W = round(2/min(abs(eig(A))))```)
   {: .text-justify}
@@ -101,7 +101,7 @@ where $\mathbf{P}_{\infty}$ is the **steady-state estimation error covariance ma
 
 # Examples
 
-See [Filter design using the finite-horizon method](/tutorials/filter-design-using-the-finite-horizon-method/) for an example.
+See [finite-horizon Kalman filter tutorial for LTI systems](/tutorials/kalmanFiniteHorizonLTI/) for a tutorial.
 
 ***
 

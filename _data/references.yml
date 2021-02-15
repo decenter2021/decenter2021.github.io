@@ -3,3 +3,9 @@
 
 - harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2017, May. Discrete-time distributed Kalman filter design for multi-vehicle systems. In 2017 American Control Conference (ACC) (pp. 5538-5543). IEEE."
   url: "https://ieeexplore.ieee.org/abstract/document/7963816/"
+
+- harvardCitation: "Viegas D, Batista P, Oliveira P, Silvestre C. Distributed controller design and performance optimization for discrete-time linear systems. Optim Control Appl Meth. 2020;1–18. https://doi.org/10.1002/oca.2669"
+  url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/oca.2669"
+
+- harvardCitation: "Pedroso, L., Batista, P., 2021, Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory, <i>[Submitted to journal]</i>"
+  url: ""

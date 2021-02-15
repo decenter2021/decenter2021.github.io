@@ -45,6 +45,8 @@ sidebar-documentation:
         url: documentation/#lti-systems-1
       - title: "LTV"
         url: documentation/#ltv-systems-1
+  - title: "Solvers"
+    url: documentation/#solvers
   - title: "Installation"
     url: documentation/#installation
 
@@ -91,6 +93,28 @@ sidebar-kalmanCentralizedLTI:
     url: "documentation/kalmanCentralizedLTI/#input-arguments"
   - title: "Output Arguments"
     url: "documentation/kalmanCentralizedLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/kalmanCentralizedLTI/#examples"
+    children:
+      - title: "Synthetic system"
+        url: "documentation/kalmanCentralizedLTI/#synthetic-system"
+  - title: "References"
+    url: "documentation/kalmanCentralizedLTI/#references"
+
+sidebar-LQRCentralizedLTI:
+  - title: "Sintax"
+    url: "documentation/LQRCentralizedLTI/#sintax"
+  - title: "Description"
+    url: "documentation/LQRCentralizedLTI/#description"
+  - title: "Input Arguments"
+    url: "documentation/LQRCentralizedLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/LQRCentralizedLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/LQRCentralizedLTI/#examples"
+    children:
+      - title: "Synthetic system"
+        url: "documentation/LQRCentralizedLTI/#synthetic-system"
 
 sidebar-kalmanOneStepLTI:
   - title: "Sintax"
@@ -106,6 +130,20 @@ sidebar-kalmanOneStepLTI:
   - title: "References"
     url: "documentation/kalmanOneStepLTI/#references"
 
+sidebar-LQROneStepLTI:
+  - title: "Sintax"
+    url: "documentation/LQROneStepLTI/#sintax"
+  - title: "Description"
+    url: "documentation/LQROneStepLTI/#description"
+  - title: "Input Arguments"
+    url: "documentation/LQROneStepLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/LQROneStepLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/LQROneStepLTI/#examples"
+  - title: "References"
+    url: "documentation/LQROneStepLTI/#references"
+
 sidebar-kalmanFiniteHorizonLTI:
   - title: "Sintax"
     url: "documentation/kalmanFiniteHorizonLTI/#sintax"
@@ -119,6 +157,38 @@ sidebar-kalmanFiniteHorizonLTI:
     url: "documentation/kalmanFiniteHorizonLTI/#examples"
   - title: "References"
     url: "documentation/kalmanFiniteHorizonLTI/#references"
+
+sidebar-LQRFiniteHorizonLTI:
+  - title: "Sintax"
+    url: "documentation/LQRFiniteHorizonLTI/#sintax"
+  - title: "Description"
+    url: "documentation/LQRFiniteHorizonLTI/#description"
+  - title: "Input Arguments"
+    url: "documentation/LQRFiniteHorizonLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/LQRFiniteHorizonLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/LQRFiniteHorizonLTI/#examples"
+  - title: "References"
+    url: "documentation/LQRFiniteHorizonLTI/#references"
+
+
+sidebar-sparseEqSolver:
+  - title: "Sintax"
+    url: "documentation/sparseEqSolver/#sintax"
+  - title: "Description"
+    url: "documentation/sparseEqSolver/#description"
+  - title: "Input Arguments"
+    url: "documentation/sparseEqSolver/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/sparseEqSolver/#output-arguments"
+  - title: "Examples"
+    url: "documentation/sparseEqSolver/#examples"
+    children:
+      - title: "Random Equation"
+        url: "documentation/sparseEqSolver/#random-equation"
+  - title: "References"
+    url: "documentation/sparseEqSolver/#references"
 
 sidebar-testDECENTER:
   - title: "Sintax"

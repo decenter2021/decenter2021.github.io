@@ -1,18 +1,25 @@
 ---
 layout: single
 title: Installation
+titleShort: Installation
 permalink: /tutorials/installation/
 layout: single
-date: 2020-09-17 13:30:00
-last_modified_at: 2020-09-18 00:00:00
 classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
 showTitle: " "
 
+category: "installationTutorial"
+date: "2021-02-14"
+last_modified_at: "2021-02-14"
+
 pageTag: "tutorials-installation"
 excerpt: "Installation guide."
+excerptShort: "Installation guide."
+
+header:
+  teaser: "/assets/img/favicon.png"
 ---
 {{page.excerpt}}
 

@@ -1,6 +1,6 @@
 - name: "R20200917b"
-  tag: "v0.1.1"
+  tag: "v1.0.0"
   urlZip: "https://github.com/LeonardoPedroso/DECENTER-toolbox/archive/v0.1.1.zip"
-  directory: "DECENTER-toolbox-0.1.1"
+  directory: "DECENTER-toolbox-1.0.0"
 
 ## DO NOT FORGET TO UPDATE RELEASES IN INDEX.MD

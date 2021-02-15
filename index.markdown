@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: "DECENTER"
+entries_layout: grid
 excerpt: "Distributed control and estimation toolbox for MATLAB"
 header:
   overlay_image: assets/img/network-4556932.jpg
@@ -10,3 +11,12 @@ header:
     - label: "Download"
       url: "https://github.com/LeonardoPedroso/DECENTER-toolbox/archive/v0.1.1.zip"
 ---
+
+<div class="grid__wrapper">
+{% assign sorted_posts = site.pages | sort:"date" | reverse %}
+  {% for post in sorted_posts %}
+   {% if post.frontPage == "true" %}
+    {% include archive-single.html type="grid" %}
+    {% endif %}
+  {% endfor %}
+</div>

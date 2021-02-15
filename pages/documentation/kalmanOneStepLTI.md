@@ -95,7 +95,7 @@ where $\mathbf{P}_{\infty}$ is the **steady-state estimation error covariance ma
 
 # Examples
 
-See [Filter design using the one-step method](/tutorials/filter-design-using-the-one-step-method/) for an example.
+See [One-step Kalman filter tutorial for LTI systems](/tutorials/kalmanOneStepLTI/) for a tutorial.
 
 ***
 

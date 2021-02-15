@@ -1,7 +1,7 @@
 ---
+layout: single
 title: Download
 permalink: /download/
-layout: single
 classes: wide
 sidebar:
   title: "Download"
@@ -16,14 +16,14 @@ Latest release
 Installation
 =====
 
-An installation tutorial can be found [here](/{{site.baseurl}}/tutorials/installation/). <br>
+An installation tutorial can be found [here](/tutorials/installation/). <br>
 <hr>
 License
 =====
 DECENTER is distributed under the MIT License: <!--[<span style="color:purple">possibly change license</span>]-->
 
 
-Copyright (c) 2020 DECENTER
+Copyright (c) 2021 DECENTER
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
