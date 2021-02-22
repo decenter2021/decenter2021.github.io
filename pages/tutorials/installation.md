@@ -1,25 +1,20 @@
 ---
 layout: single
 title: Installation
-titleShort: Installation
+showTitle: true
+excerpt: "Installation guide."
 permalink: /tutorials/installation/
-layout: single
 classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
-showTitle: " "
-
-category: "installationTutorial"
-date: "2021-02-14"
-last_modified_at: "2021-02-14"
-
-pageTag: "tutorials-installation"
-excerpt: "Installation guide."
-excerptShort: "Installation guide."
-
 header:
   teaser: "/assets/img/favicon.png"
+tags:
+  - tutorial
+  - installation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
 {{page.excerpt}}
 

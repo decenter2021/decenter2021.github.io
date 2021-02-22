@@ -28,6 +28,14 @@ baseurl: "" # "DECENTER" #"DECENTER" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+search: true
+search_provider: algolia
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-RVXEN2G3L1"
+    anonymize_ip: false # default
 
 sass:
   style: compact # possible values: nested expanded compact compressed
@@ -45,6 +53,13 @@ plugins:
   - jekyll-gist
   - jemoji
   - jekyll-include-cache
+
+algolia:
+  application_id: LBFDGI5USY
+  index_name: gh-pages
+  search_only_api_key: 32db96077928b993a33de5fdbf9c4d5a
+  powered_by: false # true (default), false
+
 
 
 defaults:

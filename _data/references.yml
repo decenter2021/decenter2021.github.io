@@ -9,3 +9,5 @@
 
 - harvardCitation: "Pedroso, L., Batista, P., 2021, Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory, <i>[Submitted to journal]</i>"
   url: ""
+- harvardCitation: "L. Pedroso, and P. Batista (xxx), Discrete-time decentralized linear quadratic control for linear time-varying systems, Int J Robust Nonlinear Control, xxx;xx:x–x. <i>[Submitted to journal]</i>"
+  url: ""

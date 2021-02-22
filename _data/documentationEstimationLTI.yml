@@ -1,9 +1,0 @@
-- name: "kalmanCentralizedLTI"
-  url: "kalmanCentralizedLTI/"
-
-- name: "kalmanOneStepLTI"
-  url: "kalmanOneStepLTI/"
-
-- name: "kalmanFiniteHorizonLTI"
-  url: "kalmanFiniteHorizonLTI/"
-  last: ""

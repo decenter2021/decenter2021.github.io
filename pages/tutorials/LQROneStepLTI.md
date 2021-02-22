@@ -1,26 +1,22 @@
 ---
 layout: single
 title: One-step regulator synthesis tutorial for LTI systems
-titleShort: One-step   
+showTitle: true
+excerpt: "Tutorial on decentralized regulator synthesis using the one-step method."
 permalink: /tutorials/LQROneStepLTI/
-layout: single
 classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
-showTitle: " "
-category: "controlLTITutorial"
-
-pageTag: "tutorials-ctrOSLTI"
-excerpt: "Tutorial on decentralized regulator synthesis using the one-step method."
-excerptShort: "Decentralized regulator synthesis using the one-step method."
-
-date: "2021-02-14"
-last_modified_at: "2021-02-14"
-
-frontPage: "true"
 header:
   teaser: "/assets/img/LQROneStepLTITutorial.svg"
+tags:
+  - control
+  - LTI
+  - one-step
+  - tutorial
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
 {{page.excerpt}}\\
 See [documentation for LQROneStepLTI](/documentation/LQROneStepLTI/) for more information.
@@ -31,7 +27,6 @@ To open this tutorial execute the following command in the MATLAB command window
 ~~~m
 open LQROneStepLTITutorial
 ~~~
-
 
 Use synthetic system matrices $\mathbf{A}$, $\mathbf{B}$, $\mathbf{Q}$, $\mathbf{R}$, and $\mathbf{E}$
 ~~~m

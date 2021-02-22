@@ -1,26 +1,25 @@
 ---
 layout: single
 title: Finite-horizon regulator synthesis tutorial for LTI systems
-titleShort: Finite-horizon   
+excerpt: "Tutorial on decentralized regulator synthesis using the finite-horizon method."
+showTitle: true
 permalink: /tutorials/LQRFiniteHorizonLTI/
-layout: single
 classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
-showTitle: " "
-category: "controlLTITutorial"
-
-pageTag: "tutorials-ctrFHLTI"
-excerpt: "Tutorial on decentralized regulator synthesis using the finite-horizon method."
-excerptShort: "Decentralized regulator synthesis using the finite-horizon method."
-
+header:
+  teaser: "/assets/img/LQRFiniteHorizonLTITutorial.svg"
+tags:
+  - tutorial
+  - LTI
+  - finite-horizon
+  - control
 date: "2021-02-14"
 last_modified_at: "2021-02-14"
 
 frontPage: "true"
-header:
-  teaser: "/assets/img/LQRFiniteHorizonLTITutorial.svg"
+
 ---
 {{page.excerpt}}\\
 See [documentation for LQRFiniteHorizonLTI](/documentation/LQRFiniteHorizonLTI/) for more information.

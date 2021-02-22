@@ -7,6 +7,14 @@ classes: wide
 sidebar:
   title: "kalmanFiniteHorizonLTI"
   nav: sidebar-kalmanFiniteHorizonLTI
+
+tags:
+    - estimation
+    - LTI
+    - finite-horizon
+    - documentation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
 
 # Sintax

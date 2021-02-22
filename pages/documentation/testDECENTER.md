@@ -7,6 +7,13 @@ classes: wide
 sidebar:
   title: "testDECENTER"
   nav: sidebar-testDECENTER
+
+tags:
+    - installation
+    - documentation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
+
 ---
 # Sintax
 ~~~m

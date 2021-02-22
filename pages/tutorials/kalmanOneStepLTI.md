@@ -1,26 +1,22 @@
 ---
 layout: single
 title: One-step Kalman filter tutorial for LTI systems
-titleShort: One-step   
+showTitle: true
+excerpt: "Tutorial on decentralized Kalman filter synthesis using the one-step method."
 permalink: /tutorials/kalmanOneStepLTI/
-layout: single
 classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
-showTitle: " "
-category: "estimationLTITutorial"
-
-date: "2021-02-14"
-last_modified_at: "2021-02-14"
-
-pageTag: "tutorials-estOSLTI"
-excerpt: "Tutorial on decentralized Kalman filter synthesis using the one-step method."
-excerptShort: "Decentralized Kalman filter synthesis using the one-step method."
-
-frontPage: "true"
 header:
   teaser: "/assets/img/kalmanOneStepLTITutorial.svg"
+tags:
+  - tutorial
+  - LTI
+  - one-step
+  - estimation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
 {{page.excerpt}}\\
 See [documentation for kalmanOneStepLTI](/documentation/kalmanOneStepLTI/) for more information.
@@ -31,7 +27,6 @@ To open this tutorial execute the following command in the MATLAB command window
 ~~~m
 open kalmanOneStepLTITutorial
 ~~~
-
 
 Use synthetic system matrices $\mathbf{A}$, $\mathbf{C}$, $\mathbf{Q}$, $\mathbf{R}$, and $\mathbf{E}$ from [[Section 4.1, 1]](#references)
 ~~~m

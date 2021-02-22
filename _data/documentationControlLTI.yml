@@ -1,9 +1,0 @@
-- name: "LQRCentralizedLTI"
-  url: "LQRCentralizedLTI/"
-
-- name: "LQROneStepLTI"
-  url: "LQROneStepLTI/"
-
-- name: "LQRFiniteHorizonLTI"
-  url: "LQRFiniteHorizonLTI/"
-  last: ""

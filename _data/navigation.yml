@@ -144,6 +144,20 @@ sidebar-LQROneStepLTI:
   - title: "References"
     url: "documentation/LQROneStepLTI/#references"
 
+sidebar-LQROneStepLTV:
+  - title: "Sintax"
+    url: "documentation/LQROneStepLTV/#sintax"
+  - title: "Description"
+    url: "documentation/LQROneStepLTV/#description"
+  - title: "Input Arguments"
+    url: "documentation/LQROneStepLTV/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/LQROneStepLTV/#output-arguments"
+  - title: "Examples"
+    url: "documentation/LQROneStepLTV/#examples"
+  - title: "References"
+    url: "documentation/LQROneStepLTV/#references"
+
 sidebar-kalmanFiniteHorizonLTI:
   - title: "Sintax"
     url: "documentation/kalmanFiniteHorizonLTI/#sintax"

@@ -7,6 +7,14 @@ classes: wide
 sidebar:
   title: "LQROneStepLTI"
   nav: sidebar-LQROneStepLTI
+
+tags:
+    - control
+    - LTI
+    - one-step
+    - documentation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
 # Sintax
 ~~~m
@@ -100,7 +108,7 @@ using the **one-step method** proposed in [[Section 3, 1]](#references).
   - ```maxOLIt```: maximum number of outer loop iterations to run until convergence (default: ```opts.maxOLIt = 100```)
   {: .text-justify}
   - ```verbose```: display algorithm status messages (default: ```opts.verbose = false```)
-  
+
 ***
 
 # Output Arguments

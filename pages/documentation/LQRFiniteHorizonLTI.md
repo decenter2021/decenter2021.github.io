@@ -7,7 +7,16 @@ classes: wide
 sidebar:
   title: "LQRFiniteHorizonLTI"
   nav: sidebar-LQRFiniteHorizonLTI
+
+tags:
+  - control
+  - LTI
+  - finite-horizon
+  - documentation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
+
 # Sintax
 ~~~m
 [K_inf,P_inf] = LQRFiniteHorizonLTI(A,B,Q,R,E)

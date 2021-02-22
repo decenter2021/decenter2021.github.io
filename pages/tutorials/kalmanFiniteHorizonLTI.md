@@ -1,25 +1,22 @@
 ---
 layout: single
-type: tutorials
 title: Finite-horizon Kalman filter tutorial for LTI systems
-date: "2021-02-14"
-last_modified_at: "2021-02-14"
-category: "estimationLTITutorial"
-titleShort: Finite-horizon  
+showTitle: true
+excerpt: "Tutorial on decentralized Kalman filter synthesis using the finite-horizon method."
 permalink: /tutorials/kalmanFiniteHorizonLTI/
 classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
-showTitle: " "
-
-pageTag: "tutorials-estOSLTI"
-excerpt: "Tutorial on decentralized Kalman filter synthesis using the finite-horizon method."
-excerptShort: "Decentralized Kalman filter synthesis using the finite-horizon method."
-
-frontPage: "true"
 header:
   teaser: "/assets/img/kalmanFiniteHorizonLTITutorial.svg"
+tags:
+  - tutorial
+  - finite-horizon
+  - LTI
+  - estimation
+date: "2021-02-14"
+last_modified_at: "2021-02-22"
 ---
 {{page.excerpt}}\\
 See [documentation for kalmanFiniteHorizonLTI](/documentation/kalmanFiniteHorizonLTI/) for more information.
