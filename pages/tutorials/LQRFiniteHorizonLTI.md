@@ -12,7 +12,7 @@ header:
   teaser: "/assets/img/LQRFiniteHorizonLTITutorial.svg"
 tags:
   - tutorial
-  - LTI
+  - lti
   - finite-horizon
   - control
 date: "2021-02-14"

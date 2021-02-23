@@ -11,6 +11,8 @@ main:
     url: /references/
   - title: "About"
     url: /about/
+  - title: "Search"
+    url: /search/
 
 sidebar-downloads:
   - title: "Latest release"

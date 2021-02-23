@@ -1,16 +1,16 @@
 ---
 title: LQROneStepLTI
 showTitle: true
+excerpt: Documentation for function LQROneStepLTI.
 permalink: /documentation/LQROneStepLTI/
 layout: single
 classes: wide
 sidebar:
   title: "LQROneStepLTI"
   nav: sidebar-LQROneStepLTI
-
 tags:
     - control
-    - LTI
+    - lti
     - one-step
     - documentation
 date: "2021-02-14"

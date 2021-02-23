@@ -10,17 +10,17 @@ sidebar:
 
 # Control
 #### LTI systems
-{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "control" or tag == "LTI"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
+{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "control" or tag == "lti"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
 
 #### LTV systems
-{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "control" or tag == "LTV"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
+{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "control" or tag == "ltv"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
 
 ***
 # Estimation
 #### LTI systems
-{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "estimation" or tag == "LTI"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
+{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "estimation" or tag == "lti"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
 #### LTV systems
-{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "estimation" or tag == "LTV"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
+{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title"%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "documentation" or tag == "estimation" or tag == "ltv"   %}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 3 %}{% if isFirst == 0 %}, {% endif %}{% assign isFirst = 0 %}[{{post.title}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}
 
 ***
 

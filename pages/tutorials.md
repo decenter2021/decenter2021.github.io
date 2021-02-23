@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 permalink: /tutorials/
-layout: tags
+layout: single
 classes: wide
 sidebar:
   title: "Tutorials"
@@ -21,7 +21,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "tutorial" or tag == "control" or tag == "LTI"   %}
+    {% if tag == "tutorial" or tag == "control" or tag == "lti"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -30,7 +30,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 
 ### LTV systems
 <div class="grid__wrapper">
@@ -38,7 +38,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "tutorial" or tag == "control" or tag == "LTV"   %}
+    {% if tag == "tutorial" or tag == "control" or tag == "ltv"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -47,7 +47,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 
 ***
 
@@ -58,7 +58,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "tutorial" or tag == "estimation" or tag == "LTI"   %}
+    {% if tag == "tutorial" or tag == "estimation" or tag == "lti"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -67,14 +67,14 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 ### LTV systems
 <div class="grid__wrapper">
 {% assign sorted_posts = site.pages | sort:"date" | reverse %}
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "tutorial" or tag == "estimation" or tag == "LTV"   %}
+    {% if tag == "tutorial" or tag == "estimation" or tag == "ltv"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -83,7 +83,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 
 ***
 
@@ -102,4 +102,4 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>

@@ -1,16 +1,16 @@
 ---
 title: LQROneStepLTV
 showTitle: true
+excerpt: Documentation for function LQROneStepLTV.
 permalink: /documentation/LQROneStepLTV/
 layout: single
 classes: wide
 sidebar:
   title: "LQROneStepLTV"
   nav: sidebar-LQROneStepLTV
-
 tags:
     - control
-    - LTV
+    - ltv
     - one-step
     - documentation
 date: "2021-02-14"

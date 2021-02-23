@@ -1,12 +1,12 @@
 ---
 title: Examples
 permalink: /examples/
-layout: tags
+layout: single
 sidebar:
   title: "Examples"
   nav: sidebar-examples
-
-showTitle: " "
+classes: wide
+showTitle: true
 excerpt: "Meaningful examples for illustrating the power of DECENTER."
 ---
 
@@ -21,7 +21,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "example" or tag == "control" or tag == "LTI"   %}
+    {% if tag == "example" or tag == "control" or tag == "lti"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -30,7 +30,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 
 ### LTV systems
 <div class="grid__wrapper">
@@ -38,7 +38,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "example" or tag == "control" or tag == "LTV"   %}
+    {% if tag == "example" or tag == "control" or tag == "ltv"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -47,7 +47,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 
 ***
 # Estimation
@@ -57,7 +57,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "example" or tag == "estimation" or tag == "LTI"   %}
+    {% if tag == "example" or tag == "estimation" or tag == "lti"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -66,14 +66,14 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
 ### LTV systems
 <div class="grid__wrapper">
 {% assign sorted_posts = site.pages | sort:"date" | reverse %}
 {% for post in sorted_posts %}
   {% assign counter = 0 %}
   {% for tag in post.tags %}
-    {% if tag == "example" or tag == "estimation" or tag == "LTV"   %}
+    {% if tag == "example" or tag == "estimation" or tag == "ltv"   %}
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
@@ -82,4 +82,4 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
   {% endfor %}
 {% endfor %}
 </div>
-<br> <br> <br> <br> <br> <br> <br> <br><br><br><br>
+<br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>

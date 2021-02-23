@@ -12,7 +12,7 @@ header:
   teaser: "/assets/img/kalmanOneStepFiniteHorizonLTIComparison.svg"
 tags:
   - example
-  - LTI
+  - lti
   - one-step
   - finite-horizon
   - control

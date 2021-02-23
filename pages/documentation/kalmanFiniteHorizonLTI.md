@@ -1,20 +1,21 @@
 ---
 title: kalmanFiniteHorizonLTI
 showTitle: true
+excerpt: Documentation for function kalmanFiniteHorizonLTI.
 permalink: /documentation/kalmanFiniteHorizonLTI/
 layout: single
 classes: wide
 sidebar:
   title: "kalmanFiniteHorizonLTI"
   nav: sidebar-kalmanFiniteHorizonLTI
-
 tags:
     - estimation
-    - LTI
+    - lti
     - finite-horizon
     - documentation
 date: "2021-02-14"
 last_modified_at: "2021-02-22"
+published: true
 ---
 
 # Sintax

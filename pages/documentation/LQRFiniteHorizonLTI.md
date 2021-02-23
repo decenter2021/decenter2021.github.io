@@ -1,16 +1,16 @@
 ---
 title: LQRFiniteHorizonLTI
 showTitle: true
+excerpt: Documentation for function LQRFiniteHorizonLTI.
 permalink: /documentation/LQRFiniteHorizonLTI/
 layout: single
 classes: wide
 sidebar:
   title: "LQRFiniteHorizonLTI"
   nav: sidebar-LQRFiniteHorizonLTI
-
 tags:
   - control
-  - LTI
+  - lti
   - finite-horizon
   - documentation
 date: "2021-02-14"

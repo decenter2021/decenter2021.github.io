@@ -1,16 +1,16 @@
 ---
 title: LQRCentralizedLTI
 showTitle: true
+excerpt: Documentation for function LQRCentralizedLTI.
 permalink: /documentation/LQRCentralizedLTI/
 layout: single
 classes: wide
 sidebar:
   title: "LQRCentralizedLTI"
   nav: sidebar-LQRCentralizedLTI
-
 tags:
     - control
-    - LTI
+    - lti
     - documentation
 date: "2021-02-14"
 last_modified_at: "2021-02-22"

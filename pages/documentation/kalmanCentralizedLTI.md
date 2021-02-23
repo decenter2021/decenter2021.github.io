@@ -1,16 +1,16 @@
 ---
 title: kalmanCentralizedLTI
 showTitle: true
+excerpt: Documentation for function kalmanCentralizedLTI.
 permalink: /documentation/kalmanCentralizedLTI/
 layout: single
 classes: wide
 sidebar:
   title: "kalmanCentralizedLTI"
   nav: sidebar-kalmanCentralizedLTI
-
 tags:
   - estimation
-  - LTI
+  - lti
   - documentation
 date: "2021-02-14"
 last_modified_at: "2021-02-22"

@@ -29,7 +29,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 search: true
-search_provider: algolia
+search_provider: "lunr"
+#algolia:
+#  application_id: "LBFDGI5USY"
+#  index_name: "gh-pages"
+#  search_only_api_key: "32db96077928b993a33de5fdbf9c4d5a"
+#  powered_by: true # true (default), false
 
 analytics:
   provider: "google-gtag"
@@ -54,11 +59,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-algolia:
-  application_id: LBFDGI5USY
-  index_name: gh-pages
-  search_only_api_key: 32db96077928b993a33de5fdbf9c4d5a
-  powered_by: false # true (default), false
+
 
 
 
@@ -119,8 +120,6 @@ include:
   - .htaccess
   - pages/
   - _posts/
-  - _posts/tutorials/
-  - _posts/examples/
   - _data/
   - _layouts/
   #- files
@@ -136,9 +135,9 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-#category_archive:
-#  type: liquid
-#  path: /categories/
+category_archive:
+  type: liquid
+  path: /categories/
 
 tag_archive:
   type: liquid

@@ -1,19 +1,18 @@
 ---
 title: sparseEqSolver
 showTitle: true
+excerpt: Documentation for function sparseEqSolver.
 permalink: /documentation/sparseEqSolver/
 layout: single
 classes: wide
 sidebar:
   title: "sparseEqSolver"
   nav: sidebar-sparseEqSolver
-
 tags:
     - solver
     - documentation
 date: "2021-02-14"
 last_modified_at: "2021-02-22"
-
 ---
 # Sintax
 ~~~m

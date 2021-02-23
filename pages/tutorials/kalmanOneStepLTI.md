@@ -12,7 +12,7 @@ header:
   teaser: "/assets/img/kalmanOneStepLTITutorial.svg"
 tags:
   - tutorial
-  - LTI
+  - lti
   - one-step
   - estimation
 date: "2021-02-14"

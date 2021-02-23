@@ -1,0 +1,16 @@
+current directory: /Users/leonardopedroso/Documents/DECENTER/DECENTER-toolbox/_ONLINE/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/leonardopedroso/.rvm/rubies/ruby-2.7.2/bin/ruby -I /Users/leonardopedroso/.rvm/rubies/ruby-2.7.2/lib/ruby/2.7.0 -r ./siteconf20210223-14767-w2xt1v.rb extconf.rb
+creating Makefile
+
+current directory: /Users/leonardopedroso/Documents/DECENTER/DECENTER-toolbox/_ONLINE/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/leonardopedroso/Documents/DECENTER/DECENTER-toolbox/_ONLINE/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/leonardopedroso/Documents/DECENTER/DECENTER-toolbox/_ONLINE/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20210223-14767-1adaav

@@ -13,7 +13,7 @@ header:
 tags:
   - tutorial
   - finite-horizon
-  - LTI
+  - lti
   - estimation
 date: "2021-02-14"
 last_modified_at: "2021-02-22"

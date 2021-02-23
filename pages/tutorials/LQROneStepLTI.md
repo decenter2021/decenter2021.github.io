@@ -12,7 +12,7 @@ header:
   teaser: "/assets/img/LQROneStepLTITutorial.svg"
 tags:
   - control
-  - LTI
+  - lti
   - one-step
   - tutorial
 date: "2021-02-14"

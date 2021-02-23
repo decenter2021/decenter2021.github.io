@@ -1,16 +1,16 @@
 ---
 title: kalmanOneStepLTI
 showTitle: true
+excerpt: Documentation for function kalmanOneStepLTI.
 permalink: /documentation/kalmanOneStepLTI/
 layout: single
 classes: wide
 sidebar:
   title: "kalmanOneStepLTI"
   nav: sidebar-kalmanOneStepLTI
-
 tags:
     - estimation
-    - LTI
+    - lti
     - one-step
     - documentation
 date: "2021-02-14"
