@@ -4,17 +4,10 @@
 
 .page__footer {
   @include clearfix;
-  /* sticky footer fix start */
- position: absolute;
- bottom: 0;
- width: 100%;
- clear: both;
- height: auto;
- /* sticky footer fix end */
-  //float: left;
-  //margin-left: 0;
-  //margin-right: 0;
-  //width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
   margin-top: 3em;
   color: $muted-text-color;
   -webkit-animation: $intro-transition;

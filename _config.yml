@@ -59,10 +59,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-
-
-
-
 defaults:
   # images
   - scope:
@@ -96,7 +92,7 @@ defaults:
       read_time: false
       comments: true
       share: false
-      related: true
+      #related: true
   # _tutorials
   - scope:
       path: "/pages"
@@ -106,9 +102,9 @@ defaults:
       layout: single
       author_profile: false
       read_time: false
-      comments: true
-      share: false
-      related: true
+      #comments: true
+      #share: false
+      #related: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -122,6 +118,7 @@ include:
   - _posts/
   - _data/
   - _layouts/
+  - assets/
   #- files
 # exclude:
 #   - .sass-cache/

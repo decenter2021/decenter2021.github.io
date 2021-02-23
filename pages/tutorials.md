@@ -6,7 +6,6 @@ classes: wide
 sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
-
 showTitle: " "
 excerpt: "Detailed simple examples for getting started with DECENTER."
 ---
