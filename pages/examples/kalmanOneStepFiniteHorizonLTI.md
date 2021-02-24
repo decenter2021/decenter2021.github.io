@@ -23,7 +23,7 @@ last_modified_at: "2021-02-22"
 See [documentation for kalmanOneStepLTI](/documentation/kalmanOneStepLTI/) and [documentation for kalmanFiniteHorizonLTI](/documentation/kalmanFiniteHorizonLTI/) for more information.
 
 ***
-To open this tutorial execute the following command in the MATLAB command window
+To open this example execute the following command in the MATLAB command window
 ~~~m
 open kalmanOneStepFiniteHorizonLTIComparison
 ~~~
