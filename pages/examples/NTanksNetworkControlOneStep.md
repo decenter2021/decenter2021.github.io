@@ -12,7 +12,7 @@ header:
   teaser: "/assets/img/NTanksNetworkControlOneStepSchemeN.pdf"
 tags:
   - example
-  - MPC
+  - mpc
   - ltv
   - nonlinear
   - one-step
