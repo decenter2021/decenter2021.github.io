@@ -18,19 +18,12 @@ tags:
   - control
 date: "2021-02-22"
 last_modified_at: "2021-02-22"
-
-pageTag: "examples-ctrlOSLTI"
-excerpt: "Performance comparison between OS and FH LQR using Monte-Carlo simulations."
-excerptLong: "Performance comparison between one-step and finite-horizon LQR synthesis for LTI systems with Monte-Carlo simulations."
-
-frontPage: "true"
-
 ---
 {{page.excerpt}}\\
 See [documentation for LQROneStepLTI](/documentation/LQROneStepLTI/) and [documentation for LQRFiniteHorizonLTI](/documentation/LQRFiniteHorizonLTI/) for more information.
 
 ***
-To open this tutorial execute the following command in the MATLAB command window
+To open this example execute the following command in the MATLAB command window
 ~~~m
 open LQROneStepFiniteHorizonLTIComparison
 ~~~
