@@ -118,6 +118,21 @@ sidebar-LQRCentralizedLTI:
       - title: "Synthetic system"
         url: "documentation/LQRCentralizedLTI/#synthetic-system"
 
+sidebar-LQRCentralizedLTV:
+  - title: "Sintax"
+    url: "documentation/LQRCentralizedLTV/#sintax"
+  - title: "Description"
+    url: "documentation/LQRCentralizedLTV/#description"
+  - title: "Input Arguments"
+    url: "documentation/LQRCentralizedLTV/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/LQRCentralizedLTV/#output-arguments"
+  - title: "Examples"
+    url: "documentation/LQRCentralizedLTV/#examples"
+    children:
+      - title: "Synthetic system"
+        url: "documentation/LQRCentralizedLTV/#synthetic-system"
+
 sidebar-kalmanOneStepLTI:
   - title: "Sintax"
     url: "documentation/kalmanOneStepLTI/#sintax"
