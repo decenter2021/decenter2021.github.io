@@ -101,8 +101,13 @@ using the **finite-horizon method** proposed in [[Section 4, 1]](#references).
 ### Optional
 - ```opts```: struct of **optional** arguments (**assumes default** value for each parameter which is not assigned by the user)
   - ```epsl```: minimum relative improvement on the objective function of the optimization problem (default: ```opts.epsl = 1e-5```)
-  {: .text-justify}
-  - ```maxIt```: maximum number of iterations until convergence (default: ```opts.maxIt = 1000```)
+{: .text-justify}
+  - ```findWindowLength```: if enabled iterates through window length values until convergence is reached (default: ```opts.findWindowLength = false```)
+{: .text-justify}
+  - ```W```: if findWindowLength is enabled ```opts.W``` is the starting value of the window length, otherwise it is the single value of the finite window length for which convergence is sought (default: ```opts.W = round(2/min(abs(eig(A))))```)
+{: .text-justify}
+  - ```maxOLIt```: maximum number of outer loop iterations to run until convergence (default: ```opts.maxOLIt = 100```)
+{: .text-justify}
   - ```verbose```: display algorithm status messages (default: ```opts.verbose = false```)
 
 ***
