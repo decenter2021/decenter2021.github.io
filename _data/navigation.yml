@@ -164,6 +164,8 @@ sidebar-LQROneStepLTI:
 sidebar-LQROneStepLTV:
   - title: "Sintax"
     url: "documentation/LQROneStepLTV/#sintax"
+  - title: "Warning"
+    url: "documentation/LQROneStepLTV/#warning"
   - title: "Description"
     url: "documentation/LQROneStepLTV/#description"
   - title: "Input Arguments"

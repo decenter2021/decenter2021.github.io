@@ -21,6 +21,18 @@ last_modified_at: "2021-02-22"
 [K,P] = LQROneStepLTV(system,T,E)
 [K,P] = LQROneStepLTV(system,T,E,opts)
 ~~~
+
+***
+
+# Warning
+This function is frequently used in an MPC-like control strategy, thus, for performance improvement, it makes use of permanent variables. To ensure the permanent variables are reset include
+{: .text-justify}
+~~~m
+clear LQROneStepLTV
+~~~
+at the beginning of every script.
+{: .text-justify}
+
 ***
 
 # Description
