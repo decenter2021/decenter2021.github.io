@@ -12,7 +12,7 @@ header:
   teaser: "/assets/img/NTanksNetworkControlOneStepSchemeN.pdf"
 tags:
   - example
-  - MPC
+  - mpc
   - ltv
   - nonlinear
   - one-step
@@ -25,6 +25,7 @@ last_modified_at: "2021-02-24"
 ***
 
 The quadruple-tank network presented in [[1]](#references), whose MATLAB code is presented in [this example](/examples/QuadrupleTankNetworkControlOneStep/), can be generalized to N tanks. Consider $N$ interconnected tanks, where $N$ is an even integer. The water level of tank $i$ is denoted by $h_i$. The network is actuated by $N/2$ pumps, which are controlled by the lower tanks, whose inputs are denoted by $u_i$ for $i=1,...,N/2$, in accordance with the schematic. Each pump is connected to a three-way valve that regulates the fraction of the flow, held constant, that goes to each of the tanks supplied by the pump. Each tank has a sensor, which measures its water level. Making use of mass balances and Bernoulli's law, the system dynamics, in the absence of noise, are given by
+{: .text-justify}
 
 $$
 	\begin{cases}
@@ -35,16 +36,20 @@ $$
 $$
 
 where $A_i$ and $a_i$ are the cross sections of tank $i$ and of its outlet hole, respectively; the constant $\gamma_i$ represents the fraction of the flow that passes through the valve $i$ to the lower tanks; $k_i$ is the constant of proportionality between the mass flow and the input of pump $i$; and $g$ denotes the acceleration of gravity. Furthermore, the input of each pump is subject to a hard constraint $u_i\in [0,u^{\mathrm{sat}}]$, where $u^{\mathrm{sat}} \in \mathbb{R}^+$.
+{: .text-justify}
 
 {:refdef: style="display: block; margin-left: auto; margin-right: auto; width: 70%;"}
 ![image-title-here](/assets/img/NTanksNetworkControlOneStepSchemeN.pdf){:class="img-responsive"}
 {: refdef}
 
 This network is presented to show the scalability of the one-step method. The same control approach as in the [example for the quadruple-tank network](/examples/QuadrupleTankNetworkControlOneStep/) is used, which is described in [[1]](#references). The simulation of the N-tank network is analogous to the quadruple tank network. To open this example execute the following command in the MATLAB command window
+{: .text-justify}
 ~~~m
 open NTanksNetworkControlOneStep
 ~~~
 and set the number of tanks to an even integer number in the field ```N```of struct ```cte``` in private function ```getConstantsNTankNetwork```, as exemplified below
+{: .text-justify}
+
 ~~~m
 %% getConstantsNTankNetwork - Description
 % This function outputs a struct of constants of the model dynamics.
@@ -94,8 +99,6 @@ The evolution of the inputs to some pumps is shown below
     <img src="/assets/img/NTanksNetworkControlOneStepNu17.svg" style="width:100%">
   </div>
 </div>
-
-{: .text-justify}
 
 
 # References
