@@ -26,7 +26,7 @@ last_modified_at: "2021-02-24"
 Consider a generic **LTV system** of the form
 
 $$
-\mathbf{x}(k+1)=\mathbf{A}(k)\mathbf{x}(k)+\mathbf{B}(k)\mathbf{u}(k)\;
+\mathbf{x}(k+1)=\mathbf{A}(k)\mathbf{x}(k)+\mathbf{B}(k)\mathbf{u}(k)\;,
 $$
 
 where $\mathbf{x}(k)\in\mathbb{R}^{n}$ is the state vector, $\mathbf{u}(k)\in \mathbb{R}^{m}$ is the input vector, and $\mathbf{A}(k)$ and $\mathbf{B}(k)$ are time-varying matrices of appropriate dimensions.
@@ -38,7 +38,7 @@ $$
 \mathbf{u}(k) = -\mathbf{K}(k)\mathbf{x}(k)\:,
 $$
 
-where $\mathbf{K}(k)\in\mathbb{R}^{m\times n}$ is the **regulator gain**. Consider a regulator **cost function**, over a given finite window $ \\{ k,\ldots,k+T \\} $, where $T\in\mathbb{N}$, as
+where $\mathbf{K}(k)\in\mathbb{R}^{m\times n}$ is the **regulator gain**. Consider a regulator **cost function**, over a given finite window $ \\{ k,\ldots,k+T \\}$, where $T\in\mathbb{N}$, as
 {: .text-justify}
 
 $$
