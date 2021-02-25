@@ -106,7 +106,38 @@ Kinf =
 ans =
    22.0634
 ~~~
-Notice that the filter gain has the desired sparsity pattern.\\
+Notice that the filter gain has the desired sparsity pattern.
+
+Alternatively, the finite-window size may be found iteratively
+~~~m
+opts.verbose = true;
+opts.maxOLIt = 10;
+opts.W = 10;
+opts.findWindowLength = true;
+[Kinf,Pinf] = LQRFiniteHorizonLTI(A,B,Q,R,E,opts);
+Kinf
+trace(Pinf)
+~~~
+
+~~~text
+----------------------------------------------------------------------------------
+Running finite-horizon algorithm with:
+epsl = 1e-05 | W = 10 | maxOLIt = 10 | findWindowSize = true.
+Trying new window length W = 15
+Trying new window length W = 23
+Trying new window length W = 35
+Convergence reached with: epsl = 1e-05 | W = 35 | maxOLIt = 10
+A total of 9 outer loop iterations were run, out of which 55.6% converged within
+the specified minimum improvement.
+----------------------------------------------------------------------------------
+Kinf =
+    1.1508    1.5293   -0.3215         0    0.8548
+         0         0    0.8970         0         0
+         0         0    0.3063    1.3767    0.1811
+ans =
+   22.0640
+~~~
+
 Simulate the dynamics of the synthetic system
 {: .text-justify}
 ~~~m

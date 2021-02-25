@@ -108,8 +108,39 @@ Kinf =
 ans =
    20.4429
 ~~~
+Notice that the finite-horizon synthesis converged and the filter gain has the desired sparsity pattern.
 
-Notice that the finite-horizon synthesis converged and the filter gain has the desired sparsity pattern.\\
+Alternatively, the finite-window size may be found iteratively
+~~~m
+opts.verbose = true;
+opts.maxOLIt = 10;
+opts.W = 10;
+opts.findWindowLength = true;
+[Kinf,Pinf] = kalmanFiniteHorizonLTI(A,C,Q,R,E,opts);
+Kinf
+trace(Pinf)
+~~~
+
+~~~text
+----------------------------------------------------------------------------------
+Running finite-horizon algorithm with:
+epsl = 1e-05 | W = 10 | maxOLIt = 10 | findWindowSize = true.
+Trying new window length W = 15
+Trying new window length W = 23
+Convergence reached with: epsl = 1e-05 | W = 23 | maxOLIt = 10
+A total of 6 outer loop iterations were run, out of which 100.0% converged within
+the specified minimum improvement.
+----------------------------------------------------------------------------------
+Kinf =
+   -0.0512         0    0.4820    0.0983
+         0    0.1743         0    0.3023
+         0         0    0.8033         0
+   -0.0162    0.2856   -0.2934         0
+    0.1032   -0.1872         0    0.0835
+ans =
+   20.4429
+~~~
+
 Simulate the error dynamics for the synthetic system
 {: .text-justify}
 ~~~m
@@ -124,11 +155,11 @@ error = cell(1,SimIt);
 error0 = transpose(mvnrnd(zeros(n,1),P0));
 for j = 1:SimIt
     if j == 1
-        error{1,j} = (eye(n)-K*C)*(A*error0+...
-            mvnrnd(zeros(n,1),Q)')-K*mvnrnd(zeros(o,1),R)';
+        error{1,j} = (eye(n)-Kinf*C)*(A*error0+...
+            mvnrnd(zeros(n,1),Q)')-Kinf*mvnrnd(zeros(o,1),R)';
     else
-        error{1,j} = (eye(n)-K*C)*(A*error{1,j-1}+...
-            mvnrnd(zeros(n,1),Q))'-K*mvnrnd(zeros(o,1),R)';
+        error{1,j} = (eye(n)-Kinf*C)*(A*error{1,j-1}+...
+            mvnrnd(zeros(n,1),Q))'-Kinf*mvnrnd(zeros(o,1),R)';
     end
 end
 ~~~
