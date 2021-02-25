@@ -85,7 +85,7 @@ $$
     - ```P{i,1}```: $$\mathbf{P}(k+i-1)$$
 
 ***
-
+# Examples
 ### Synthetic system
 To open this example execute the following command in the MATLAB command window
 ~~~m
