@@ -116,7 +116,7 @@ using the **finite-horizon method** proposed in [[Section 4, 1]](#references).
 
 # Examples
 
-See [Regulator design using the finite-horizon method](/tutorials/LQRFiniteHorizonLTI/) for an example.
+See [Regulator design using the finite-horizon method](/tutorials/LQRFiniteHorizonLTI/) for a tutorial.
 
 ***
 

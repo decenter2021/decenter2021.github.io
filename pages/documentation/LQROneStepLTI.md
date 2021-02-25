@@ -120,7 +120,7 @@ using the **one-step method** proposed in [[Section 3, 1]](#references).
 
 # Examples
 
-See [Regulator design using the finite-horizon method](/tutorials/LQROneStepLTI/) for an example.
+See [Regulator design using the finite-horizon method](/tutorials/LQROneStepLTI/) for a tutorial.
 
 ***
 
