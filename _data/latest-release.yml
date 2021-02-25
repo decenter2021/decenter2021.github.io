@@ -1,6 +1,4 @@
-- name: "R20210215"
+- name: "R20210225"
   tag: "v1.0.0"
   urlZip: "https://github.com/decenter2021/decenter/archive/v1.0.0.zip"
   directory: "decenter-1.0.0"
-
-## DO NOT FORGET TO UPDATE RELEASES IN INDEX.MD
