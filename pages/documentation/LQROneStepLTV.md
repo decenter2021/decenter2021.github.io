@@ -14,24 +14,13 @@ tags:
     - one-step
     - documentation
 date: "2021-02-14"
-last_modified_at: "2021-02-22"
+last_modified_at: "2021-07-09"
 ---
 # Sintax
 ~~~m
 [K,P] = LQROneStepLTV(system,T,E)
 [K,P] = LQROneStepLTV(system,T,E,opts)
 ~~~
-
-***
-
-# Warning
-This function is frequently used in an MPC-like control strategy, thus, for performance improvement, it makes use of permanent variables. To ensure the permanent variables are reset include
-{: .text-justify}
-~~~m
-clear LQROneStepLTV
-~~~
-at the beginning of every script.
-{: .text-justify}
 
 ***
 
@@ -110,6 +99,24 @@ The commands
 
 ***
 
+# Computational complexity
+The one-step optimization problem is solved using the efficient sparse equation solver proposed in [[2]](#references). See [sparseEqSolver](/documentation/sparseEqSolver/) for the implementation of the solver.
+
+Define the set $\chi$ of integer pairs of the form $(i,j)$ to index the nonzero entries of $\mathbf{E}$ as
+{: .text-justify}
+
+$$
+\begin{cases}
+(i,j) \in \chi &\;,\;\left[\mathbf{E}\right]_{i,j} \neq 0\\
+(i,j) \notin \chi &\;,\;\text{otherwise}
+\end{cases}, i = 1,...,n,\: j = 1,...,o\:.
+$$
+
+It is shown in [[2]](#references) that each gain computation of the algorithm requires $\mathcal{O}(\|\chi\|^3)$ floating-point operations, where $\|\chi\|$ denotes the cardinality of set $\chi$. In the field of distributed estimation and control theory, $\|\chi\|$ is usually given by $\|\chi\| \approx cn$, where $c\in \mathbb{N}$ is a constant. It, thus, follows that each iteration requires $\mathcal{O}(n^3)$ floating-point operations, thus it has the same complexity as a centralized gain computation.
+{: .text-justify}
+
+***
+
 # Input arguments
 ### Required
 -  ```system``` : $$(T+1)\times 4$$ cell array of the time-varying dynamics matrices of the LTV system, <i>i.e.</i>,
@@ -144,4 +151,6 @@ See [Regulator design using the one-step method](/tutorials/LQROneStepLTV/) for 
 
 # References
 [1] <a href="" target="_blank">L. Pedroso, and P. Batista (xxx), Discrete-time decentralized linear quadratic control for linear time-varying systems, Int J Robust Nonlinear Control, xxx;xx:x–x. <i>[Submitted to journal]</i></a>
+
+[2] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
 {: .text-justify}
