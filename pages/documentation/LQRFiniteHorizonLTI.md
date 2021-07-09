@@ -92,6 +92,7 @@ using the **finite-horizon method** proposed in [[Section 4, 1]](#references).
 
 # Computational complexity
 The finite-horizon optimization problem is solved using the efficient sparse equation solver proposed in [[2]](#references). See [sparseEqSolver](/documentation/sparseEqSolver/) for the implementation of the solver.
+{: .text-justify}
 
 Define the set $\chi$ of integer pairs of the form $(i,j)$ to index the nonzero entries of $\mathbf{E}$ as
 {: .text-justify}

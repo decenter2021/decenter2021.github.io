@@ -101,6 +101,7 @@ The commands
 
 # Computational complexity
 The one-step optimization problem is solved using the efficient sparse equation solver proposed in [[2]](#references). See [sparseEqSolver](/documentation/sparseEqSolver/) for the implementation of the solver.
+{: .text-justify}
 
 Define the set $\chi$ of integer pairs of the form $(i,j)$ to index the nonzero entries of $\mathbf{E}$ as
 {: .text-justify}
