@@ -7,7 +7,8 @@
 - harvardCitation: "Viegas D, Batista P, Oliveira P, Silvestre C. Distributed controller design and performance optimization for discrete-time linear systems. Optim Control Appl Meth. 2020;1–18. https://doi.org/10.1002/oca.2669"
   url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/oca.2669"
 
-- harvardCitation: "Pedroso, L., Batista, P., 2021, Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory, <i>[Submitted to journal]</i>"
-  url: ""
+- harvardCitation: "Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497"
+  url: "https://doi.org/10.3390/math9131497"
+  
 - harvardCitation: "L. Pedroso, and P. Batista (xxx), Discrete-time decentralized linear quadratic control for linear time-varying systems, Int J Robust Nonlinear Control, xxx;xx:x–x. <i>[Submitted to journal]</i>"
   url: ""
