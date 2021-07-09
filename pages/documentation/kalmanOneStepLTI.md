@@ -14,7 +14,7 @@ tags:
     - one-step
     - documentation
 date: "2021-02-14"
-last_modified_at: "2021-02-22"
+last_modified_at: "2021-07-09"
 
 ---
 # Sintax
@@ -77,6 +77,25 @@ where $\mathbf{P}_{\infty}$ is the **steady-state estimation error covariance ma
 
 ***
 
+# Computational complexity
+The one-step optimization problem is solved using the efficient sparse equation solver proposed in [[2]](#references). See [sparseEqSolver](/documentation/sparseEqSolver/) for the implementation of the solver.
+{: .text-justify}
+
+Define the set $\chi$ of integer pairs of the form $(i,j)$ to index the nonzero entries of $\mathbf{E}$ as
+{: .text-justify}
+
+$$
+\begin{cases}
+(i,j) \in \chi &\;,\;\left[\mathbf{E}\right]_{i,j} \neq 0\\
+(i,j) \notin \chi &\;,\;\text{otherwise}
+\end{cases}, i = 1,...,n,\: j = 1,...,o\:.
+$$
+
+It is shown in [[2]](#references) that each gain computation of the algorithm requires $\mathcal{O}(\|\chi\|^3)$ floating-point operations, where $\|\chi\|$ denotes the cardinality of set $\chi$. In the field of distributed estimation and control theory, $\|\chi\|$ is usually given by $\|\chi\| \approx cn$, where $c\in \mathbb{N}$ is a constant. It, thus, follows that each iteration requires $\mathcal{O}(n^3)$ floating-point operations, thus it has the same complexity as a centralized gain computation.
+{: .text-justify}
+
+***
+
 # Input arguments
 ### Required
 -  ```A``` : matrix $\mathbf{A}$ of the dynamics of the LTI system
@@ -110,4 +129,7 @@ See [One-step Kalman filter tutorial for LTI systems](/tutorials/kalmanOneStepLT
 
 # References
 [1] <a href="https://www.sciencedirect.com/science/article/pii/S0967066118300571" target="_blank">Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68.</a>
+{: .text-justify}
+
+[2] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
 {: .text-justify}

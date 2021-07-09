@@ -138,6 +138,8 @@ sidebar-kalmanOneStepLTI:
     url: "documentation/kalmanOneStepLTI/#sintax"
   - title: "Description"
     url: "documentation/kalmanOneStepLTI/#description"
+  - title: "Computational complexity"
+    url: "documentation/kalmanOneStepLTI/#computational-complexity"
   - title: "Input Arguments"
     url: "documentation/kalmanOneStepLTI/#input-arguments"
   - title: "Output Arguments"
