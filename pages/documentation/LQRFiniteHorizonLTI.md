@@ -14,7 +14,7 @@ tags:
   - finite-horizon
   - documentation
 date: "2021-02-14"
-last_modified_at: "2021-02-22"
+last_modified_at: "2021-07-09"
 ---
 
 # Sintax
@@ -91,9 +91,9 @@ using the **finite-horizon method** proposed in [[Section 4, 1]](#references).
 ***
 
 # Computational complexity
-The finite-horizon optimization problem is solved using the efficient sparse solver proposed in [[2]](#references). See [sparseEqSolver](/documentation/sparseEqSolver/) for the implementation of the solver.
+The finite-horizon optimization problem is solved using the efficient sparse equation solver proposed in [[2]](#references). See [sparseEqSolver](/documentation/sparseEqSolver/) for the implementation of the solver.
 
-Define the set $\chi$ of integer pairs of the form $(i,j)$ index the nonzero entries of $\mathbf{E}$ as
+Define the set $\chi$ of integer pairs of the form $(i,j)$ to index the nonzero entries of $\mathbf{E}$ as
 {: .text-justify}
 
 $$

@@ -152,6 +152,8 @@ sidebar-LQROneStepLTI:
     url: "documentation/LQROneStepLTI/#sintax"
   - title: "Description"
     url: "documentation/LQROneStepLTI/#description"
+  - title: "Computational complexity"
+    url: "documentation/LQROneStepLTI/#computational-complexity"
   - title: "Input Arguments"
     url: "documentation/LQROneStepLTI/#input-arguments"
   - title: "Output Arguments"
