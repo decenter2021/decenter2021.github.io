@@ -196,6 +196,8 @@ sidebar-LQRFiniteHorizonLTI:
     url: "documentation/LQRFiniteHorizonLTI/#sintax"
   - title: "Description"
     url: "documentation/LQRFiniteHorizonLTI/#description"
+  - title: "Computational complexity"
+    url: "documentation/LQRFiniteHorizonLTI/#computational-complexity"
   - title: "Input Arguments"
     url: "documentation/LQRFiniteHorizonLTI/#input-arguments"
   - title: "Output Arguments"

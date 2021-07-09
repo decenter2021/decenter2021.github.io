@@ -104,7 +104,5 @@ ans =
 ~~~
 
 # References
-[1] <a href="" target="_blank">Pedroso, L., Batista, P., 2021. Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory, <i>[Submitted to journal]</i>.</a>
-
-
+[1] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
 {: .text-justify}
