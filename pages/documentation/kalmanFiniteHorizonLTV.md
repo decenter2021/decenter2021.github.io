@@ -107,6 +107,14 @@ It is shown in [[2]](#references) that each iteration of the algorithm requires 
 -  ```T``` : finite window length
 -  ```Pprev``` : predicted estimation error covariance matrix, <i>i.e.</i>, $\mathbf{P}(1\|0)$
 
+### Optional
+- ```opts```: struct of **optional** arguments (**assumes default** value for each parameter which is not assigned by the user)
+  - ```epsl```: minimum relative improvement on the objective function of the optimization problem (default: ```opts.epsl = 1e-5```)
+  {: .text-justify}
+  - ```maxOLIt```: maximum number of outer loop iterations to run until convergence (default: ```opts.maxOLIt = 100```)
+  {: .text-justify}
+  - ```verbose```: display algorithm status messages (default: ```opts.verbose = false```)
+
 ***
 
 # Output Arguments
