@@ -103,6 +103,16 @@ sidebar-kalmanCentralizedLTI:
   - title: "References"
     url: "documentation/kalmanCentralizedLTI/#references"
 
+sidebar-kalmanCentralizedLTV:
+  - title: "Sintax"
+    url: "documentation/kalmanCentralizedLTV/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanCentralizedLTV/#description"
+  - title: "Input Arguments"
+    url: "documentation/kalmanCentralizedLTV/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanCentralizedLTV/#output-arguments"
+
 sidebar-LQRCentralizedLTI:
   - title: "Sintax"
     url: "documentation/LQRCentralizedLTI/#sintax"
@@ -148,6 +158,22 @@ sidebar-kalmanOneStepLTI:
     url: "documentation/kalmanOneStepLTI/#examples"
   - title: "References"
     url: "documentation/kalmanOneStepLTI/#references"
+
+sidebar-kalmanOneStepLTV:
+  - title: "Sintax"
+    url: "documentation/kalmanOneStepLTV/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanOneStepLTV/#description"
+  - title: "Computational complexity"
+    url: "documentation/kalmanOneStepLTV/#computational-complexity"
+  - title: "Input Arguments"
+    url: "documentation/kalmanOneStepLTV/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanOneStepLTV/#output-arguments"
+  - title: "Examples"
+    url: "documentation/kalmanOneStepLTV/#examples"
+  - title: "References"
+    url: "documentation/kalmanOneStepLTV/#references"
 
 sidebar-LQROneStepLTI:
   - title: "Sintax"
