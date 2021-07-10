@@ -15,7 +15,7 @@ tags:
   - ltv
   - finite-horizon
   - estimation
-date: "2021-07-10"
+date: "2021-07-09"
 last_modified_at: "2021-07-10"
 ---
 {{page.excerpt}}\\
