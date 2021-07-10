@@ -175,6 +175,22 @@ sidebar-kalmanOneStepLTV:
   - title: "References"
     url: "documentation/kalmanOneStepLTV/#references"
 
+sidebar-kalmanFiniteHorizonLTV:
+  - title: "Sintax"
+    url: "documentation/kalmanFiniteHorizonLTV/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanFiniteHorizonLTV/#description"
+  - title: "Computational complexity"
+    url: "documentation/kalmanFiniteHorizonLTV/#computational-complexity"
+  - title: "Input Arguments"
+    url: "documentation/kalmanFiniteHorizonLTV/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanFiniteHorizonLTV/#output-arguments"
+  - title: "Examples"
+    url: "documentation/kalmanFiniteHorizonLTV/#examples"
+  - title: "References"
+    url: "documentation/kalmanFiniteHorizonLTV/#references"
+
 sidebar-LQROneStepLTI:
   - title: "Sintax"
     url: "documentation/LQROneStepLTI/#sintax"
