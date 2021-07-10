@@ -21,6 +21,8 @@ sidebar-downloads:
     url: /download/#installation
   - title: "License"
     url: /download/#license
+  - title: "Releases"
+    url: /download/#release-notes
 
 sidebar-references:
 
@@ -254,6 +256,13 @@ sidebar-LQRFiniteHorizonLTI:
     url: "documentation/LQRFiniteHorizonLTI/#examples"
   - title: "References"
     url: "documentation/LQRFiniteHorizonLTI/#references"
+
+sidebar-releases:
+  - title: "R20210710 (v1.1.0)"
+    url: "/releases/R20210710/"
+  - title: "R20210225 (v1.0.0)"
+    url: "/releases/R20210225/"
+
 
 
 sidebar-sparseEqSolver:

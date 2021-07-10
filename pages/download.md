@@ -45,3 +45,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 {: .text-justify}
+
+<hr>
+Release notes
+=====
+{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title" | reverse%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "release"%}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 1 %}{% if isFirst == 0 %};<br>{% endif %}{% assign isFirst = 0 %}[{{post.shortTitle}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}.
