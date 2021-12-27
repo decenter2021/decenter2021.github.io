@@ -18,6 +18,7 @@
   harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68. doi:10.1016/j.conengprac.2018.03.014."
   url: "https://doi.org/10.1016/j.conengprac.2018.03.014"
 
+
 - key: "Viegas2017Discrete"
   harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2017, May. Discrete-time distributed Kalman filter design for multi-vehicle systems. In 2017 American Control Conference (ACC) (pp. 5538-5543). IEEE. doi:10.23919/ACC.2017.7963816."
   url: "https://doi.org/10.23919/ACC.2017.7963816"
