@@ -14,7 +14,7 @@ tags:
     - one-step
     - documentation
 date: "2021-02-14"
-last_modified_at: "2021-07-09"
+last_modified_at: "2021-12-27"
 ---
 # Sintax
 ~~~m
@@ -151,7 +151,12 @@ See [Regulator design using the one-step method](/tutorials/LQROneStepLTV/) for 
 ***
 
 # References
-[1] <a href="" target="_blank">L. Pedroso, and P. Batista (xxx), Discrete-time decentralized linear quadratic control for linear time-varying systems, Int J Robust Nonlinear Control, xxx;xx:x–x. <i>[Submitted to journal]</i></a>
-
-[2] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021LQROSLTV" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}
+
+[2] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021Efficient" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
+{: .text-justify}
+{% endif %}{% endfor %}

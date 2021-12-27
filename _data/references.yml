@@ -1,17 +1,23 @@
-- harvardCitation: "Pedroso, L., Batista, P., Oliveira, P. and Silvestre, C., 2021. Discrete-time distributed Kalman filter design for networks of interconnected systems with linear time-varying dynamics. International Journal of Systems Science. doi:10.1080/00207721.2021.2002461."
+- key: "Pedroso2021KalmanOSFHLTV"
+  harvardCitation: "Pedroso, L., Batista, P., Oliveira, P. and Silvestre, C., 2021. Discrete-time distributed Kalman filter design for networks of interconnected systems with linear time-varying dynamics. International Journal of Systems Science. doi:10.1080/00207721.2021.2002461."
   url: "https://doi.org/10.1080/00207721.2021.2002461"
 
-- harvardCitation: "Pedroso, L. and Batista, P., 2021. Discrete‐time decentralized linear quadratic control for linear time‐varying systems. International Journal of Robust and Nonlinear Control. doi:10.1002/rnc.5772."
+- key: "Pedroso2021LQROSLTV"
+  harvardCitation: "Pedroso, L. and Batista, P., 2021. Discrete‐time decentralized linear quadratic control for linear time‐varying systems. International Journal of Robust and Nonlinear Control. doi:10.1002/rnc.5772."
   url: "https://doi.org/10.1002/rnc.5772"
 
-- harvardCitation: "Pedroso, L. and Batista, P., 2021. Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory. Mathematics, 9(13), p.1497. doi:10.3390/math9131497."
+- key: "Pedroso2021Efficient"
+  harvardCitation: "Pedroso, L. and Batista, P., 2021. Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory. Mathematics, 9(13), p.1497. doi:10.3390/math9131497."
   url: "https://doi.org/10.3390/math9131497"
 
-- harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2021. Distributed controller design and performance optimization for discrete‐time linear systems. Optimal Control Applications and Methods, 42(1), pp.126-143. doi:10.1002/oca.2669."
+- key: "Viegas2021Distributed"
+  harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2021. Distributed controller design and performance optimization for discrete‐time linear systems. Optimal Control Applications and Methods, 42(1), pp.126-143. doi:10.1002/oca.2669."
   url: "https://doi.org/10.1002/oca.2669"
 
-- harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68. doi:10.1016/j.conengprac.2018.03.014."
+- key: "Viegas2018Discrete"
+  harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68. doi:10.1016/j.conengprac.2018.03.014."
   url: "https://doi.org/10.1016/j.conengprac.2018.03.014"
 
-- harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2017, May. Discrete-time distributed Kalman filter design for multi-vehicle systems. In 2017 American Control Conference (ACC) (pp. 5538-5543). IEEE. doi:10.23919/ACC.2017.7963816."
+- key: "Viegas2017Discrete"
+  harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2017, May. Discrete-time distributed Kalman filter design for multi-vehicle systems. In 2017 American Control Conference (ACC) (pp. 5538-5543). IEEE. doi:10.23919/ACC.2017.7963816."
   url: "https://doi.org/10.23919/ACC.2017.7963816"

@@ -13,7 +13,7 @@ tags:
   - lti
   - documentation
 date: "2021-02-14"
-last_modified_at: "2021-02-22"
+last_modified_at: "2021-12-27"
 ---
 # Sintax
 ~~~m
@@ -142,5 +142,7 @@ ans =
 ***
 
 # References
-[1] <a href="https://www.sciencedirect.com/science/article/pii/S0967066118300571" target="_blank">Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68.</a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Viegas2018Discrete" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}

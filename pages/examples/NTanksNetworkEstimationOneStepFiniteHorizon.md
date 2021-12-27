@@ -18,7 +18,7 @@ tags:
   - finite-horizon
   - estimation
 date: "2021-07-10"
-last_modified_at: "2021-07-10"
+last_modified_at: "2021-12-27"
 ---
 {{page.excerpt}}
 
@@ -378,5 +378,7 @@ The evolution of the water level in two of the tanks and each of the estimates u
 
 
 # References
-[1] <a href="" target="_blank">[Not published yet]</a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021KalmanOSFHLTV" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}

@@ -14,7 +14,7 @@ tags:
     - finite-horizon
     - documentation
 date: "2021-02-14"
-last_modified_at: "2021-07-09"
+last_modified_at: "2021-12-27"
 published: true
 ---
 
@@ -134,8 +134,13 @@ See [finite-horizon Kalman filter tutorial for LTI systems](/tutorials/kalmanFin
 ***
 
 # References
-[1] <a href="https://www.sciencedirect.com/science/article/pii/S0967066118300571" target="_blank">Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68.</a>
-{: .text-justify}
 
-[2] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Viegas2018Discrete" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}
+
+[2] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021Efficient" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
+{: .text-justify}
+{% endif %}{% endfor %}

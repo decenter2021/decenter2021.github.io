@@ -12,7 +12,7 @@ tags:
     - solver
     - documentation
 date: "2021-02-14"
-last_modified_at: "2021-02-22"
+last_modified_at: "2021-12-27"
 ---
 # Sintax
 ~~~m
@@ -104,5 +104,7 @@ ans =
 ~~~
 
 # References
-[1] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021Efficient" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}

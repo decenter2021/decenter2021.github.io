@@ -18,7 +18,7 @@ tags:
   - one-step
   - control
 date: "2021-02-24"
-last_modified_at: "2021-02-24"
+last_modified_at: "2021-12-27"
 ---
 {{page.excerpt}}
 
@@ -102,5 +102,7 @@ The evolution of the inputs to some pumps is shown below
 
 
 # References
-[1] <a href="" target="_blank">L. Pedroso, and P. Batista (xxx), Discrete-time decentralized linear quadratic control for linear time-varying systems, Int J Robust Nonlinear Control, xxx;xx:x–x. <i>[Submitted to journal]</i></a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021LQROSLTV" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}

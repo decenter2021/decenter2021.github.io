@@ -14,7 +14,7 @@ tags:
     - one-step
     - documentation
 date: "2021-02-14"
-last_modified_at: "2021-07-09"
+last_modified_at: "2021-12-27"
 ---
 # Sintax
 ~~~m
@@ -144,8 +144,12 @@ See [Regulator design using the finite-horizon method](/tutorials/LQROneStepLTI/
 ***
 
 # References
-[1] <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/oca.2669" target="_blank">Viegas D, Batista P, Oliveira P, Silvestre C. Distributed controller design and performance optimization for discrete-time linear systems. Optim Control Appl Meth. 2020;1–18. https://doi.org/10.1002/oca.2669</a>
+[1] {% for paper in site.data.references%}{% if paper.key == "Viegas2021Distributed" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}
 
-[2] <a href="https://doi.org/10.3390/math9131497" target="_blank">Pedroso, L.; Batista, P. Efficient Algorithm for the Computation of the Solution to a Sparse Matrix Equation in Distributed Control Theory. Mathematics 2021, 9, 1497. https://doi.org/10.3390/math9131497</a>
+[2] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021Efficient" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
 {: .text-justify}
+{% endif %}{% endfor %}
