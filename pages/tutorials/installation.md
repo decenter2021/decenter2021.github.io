@@ -9,12 +9,12 @@ sidebar:
   title: "Tutorials"
   nav: sidebar-tutorials
 header:
-  teaser: "/assets/img/favicon.png"
+  teaser: "/assets/img/network-4556932 copy.jpg"
 tags:
   - tutorial
   - installation
 date: "2021-02-13"
-last_modified_at: "2021-02-22"
+last_modified_at: "2021-12-27"
 ---
 {{page.excerpt}}
 
