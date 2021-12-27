@@ -16,7 +16,7 @@ tags:
   - one-step
   - estimation
 date: "2021-07-09"
-last_modified_at: "2021-07-10"
+last_modified_at: "2021-12-27"
 ---
 {{page.excerpt}}\\
 See [documentation for kalmanOneStepLTV](/documentation/kalmanOneStepLTV/) for more information.
@@ -61,7 +61,7 @@ Simulate error dynamics ans synthesize distributed Kalman filter gain using the 
 ~~~m
 % Generate random initial predicted covariance for the initial time instant
 P0 = rand(n,n);
-P0 = P0*P0';
+P0 = 100*(P0*P0');
 % Initialise error cell
 x = cell(T,1);
 % Generate random initial error
@@ -73,9 +73,11 @@ for j = 1:T
     [K,Ppred,~] = kalmanOneStepLTV(system(j,:),E,Ppred);
     % Error dynamics
     if j == 1
-        x{j,1} = (system{j,1}-K*system{j,2})*x0;
+        x{j,1} = (eye(n)-K*system{j,2})*(A0*x0+...
+                mvnrnd(zeros(n,1),Q0)')-K*mvnrnd(zeros(o,1),system{j,4})';
     else
-        x{j,1} = (system{j,1}-K*system{j,2})*x{j-1,1};
+        x{j,1} = (eye(n)-K*system{j,2})*(system{j-1,1}*x{j-1,1}+...
+                mvnrnd(zeros(n,1),system{j-1,3})')-K*mvnrnd(zeros(o,1),system{j,4})';
     end
 end
 ~~~

@@ -16,7 +16,7 @@ tags:
   - finite-horizon
   - estimation
 date: "2021-07-09"
-last_modified_at: "2021-07-10"
+last_modified_at: "2021-12-27"
 ---
 {{page.excerpt}}\\
 See [documentation for kalmanFiniteHorizonLTV](/documentation/kalmanFiniteHorizonLTV/) for more information.
@@ -62,7 +62,7 @@ Synthesize Kalman filter gain using the finite-horizon algorithm for the whole w
 ~~~m
 % Generate random initial predicted covariance for the initial time instant
 P0 = rand(n,n);
-P0 = P0*P0';
+P0 = 100*(P0*P0');
 % Algorithm paramenters (optional)
 opts.verbose = true;
 opts.epsl = 1e-5;
@@ -89,9 +89,11 @@ Ppred = A0*P0*A0'+Q0;
 for j = 1:T
     % Error dynamics
     if j == 1
-        x{j,1} = (system{j,1}-K{j,1}*system{j,2})*x0;
+        x{j,1} = (eye(n)-K{j,1}*system{j,2})*(A0*x0+...
+                mvnrnd(zeros(n,1),Q0)')-K{j,1}*mvnrnd(zeros(o,1),system{j,4})';
     else
-        x{j,1} = (system{j,1}-K{j,1}*system{j,2})*x{j-1,1};
+        x{j,1} = (eye(n)-K{j,1}*system{j,2})*(system{j-1,1}*x{j-1,1}+...
+                mvnrnd(zeros(n,1),system{j-1,3})')-K{j,1}*mvnrnd(zeros(o,1),system{j,4})';
     end
 end
 ~~~
