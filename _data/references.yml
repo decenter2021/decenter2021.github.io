@@ -2,6 +2,10 @@
   harvardCitation: "Pedroso, L., Batista, P., Oliveira, P. and Silvestre, C., 2021. Discrete-time distributed Kalman filter design for networks of interconnected systems with linear time-varying dynamics. International Journal of Systems Science. doi:10.1080/00207721.2021.2002461."
   url: "https://doi.org/10.1080/00207721.2021.2002461"
 
+- key: "Pedroso2021Traffic"
+  harvardCitation: "Pedroso, L. and Batista, P., 2021. Decentralized store-and-forward based strategies for the signal control problem in large-scale congested urban road networks. Transportation Research Part C: Emerging Technologies, 132, p.103412. doi:10.1016/j.trc.2021.103412."
+  url: "https://doi.org/10.1016/j.trc.2021.103412"
+
 - key: "Pedroso2021LQROSLTV"
   harvardCitation: "Pedroso, L. and Batista, P., 2021. Discrete‐time decentralized linear quadratic control for linear time‐varying systems. International Journal of Robust and Nonlinear Control. doi:10.1002/rnc.5772."
   url: "https://doi.org/10.1002/rnc.5772"
@@ -17,7 +21,6 @@
 - key: "Viegas2018Discrete"
   harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2018. Discrete-time distributed Kalman filter design for formations of autonomous vehicles. Control Engineering Practice, 75, pp.55-68. doi:10.1016/j.conengprac.2018.03.014."
   url: "https://doi.org/10.1016/j.conengprac.2018.03.014"
-
 
 - key: "Viegas2017Discrete"
   harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2017, May. Discrete-time distributed Kalman filter design for multi-vehicle systems. In 2017 American Control Conference (ACC) (pp. 5538-5543). IEEE. doi:10.23919/ACC.2017.7963816."
