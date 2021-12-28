@@ -48,7 +48,7 @@ where $A_i$ and $a_i$ are the cross sections of tank $i$ and of its outlet hole,
 {: refdef}
 
 
-In [[1]](#references), a controller design approach is proposed to be implemented to this nonlinear network, making use of the functions of DECENTER toolbox. In short, it is based on an MPC-like scheme computed using and iterative LQR (iLQR) and a novel tracking approach. The full MATLAB code for the implementation of the decentralized controller and its simulation is included in the toolbox source code as an example. To open it execute the following command in the MATLAB command window
+In [[1]](#references), a controller design approach is proposed to be implemented to this nonlinear network, making use of the functions of DECENTER toolbox. In short, it is based on an MPC-like scheme computed using an iterative LQR (iLQR) and a novel tracking approach. The full MATLAB code for the implementation of the decentralized controller and its simulation is included in the toolbox source code as an example. To open it execute the following command in the MATLAB command window
 {: .text-justify}
 
 ~~~m
