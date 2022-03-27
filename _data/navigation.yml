@@ -193,6 +193,22 @@ sidebar-kalmanFiniteHorizonLTV:
   - title: "References"
     url: "documentation/kalmanFiniteHorizonLTV/#references"
 
+sidebar-kalmanCausalFiniteHorizonLTV:
+  - title: "Sintax"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#sintax"
+  - title: "Description"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#description"
+  - title: "Computational complexity"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#computational-complexity"
+  - title: "Input Arguments"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#output-arguments"
+  - title: "Examples"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#examples"
+  - title: "References"
+    url: "documentation/kalmanCausalFiniteHorizonLTV/#references"
+
 sidebar-LQROneStepLTI:
   - title: "Sintax"
     url: "documentation/LQROneStepLTI/#sintax"
