@@ -20,7 +20,7 @@ date: "2021-12-28"
 last_modified_at: "2021-12-28"
 ---
 {{page.excerpt}}\\
-The causal finite-horizon method proposed in [[1]](#references) is based on the finite-horizon method for LTV systems proposed in [[2]](#references). See [documentation for kalmanFiniteHorizonLTV](/documentation/kalmanFiniteHorizonLTV/) for more information.
+See [documentation for kalmanCausalFiniteHorizonLTV](/documentation/kalmanCausalFiniteHorizonLTV/) for more information.
 {: .text-justify}
 
 ***
@@ -183,7 +183,7 @@ which can be represented a directed graph, whose edges represent measurement cou
 ![image-title-here](/assets/img/kalmanCausalFiniteHorizonTutorial_net.svg){:class="img-responsive"}
 {: refdef}
 
-Then,, synthesize the Kalman filter causal finite-horizon gains online and simulate the estimation error dynamics with
+Then, synthesize the Kalman filter causal finite-horizon gains online and simulate the estimation error dynamics with
 {: .text-justify}
 ~~~m
 %% Simulate error dynamics
@@ -192,6 +192,9 @@ P0 = 100*eye(n);
 % Parameters of CFH method
 W = 4;
 opts.verbose = true;
+opts.epsl = 1e-4;
+opts.alpha = 0.1;
+opts.maxOLIt = 1e4;
 % Initialise error cell
 x = cell(T,1);
 P = cell(T,1);
@@ -217,7 +220,7 @@ for k = 1:T
         x_aux = x{CFH_tau-1,1}; % Get estimate at the beggining of the window
     end
     % Compute the Finite Horizon gains for the window of past instants
-    [CFH_K,CFH_P] = kalmanFiniteHorizonLTV(system(CFH_tau:k,:),E,CFH_W,CFH_Ppred0);
+    [CFH_K,CFH_P] = kalmanCausalFiniteHorizonLTV(system(CFH_tau:k,:),E,CFH_W,CFH_Ppred0,opts);
     % Covariance at the end of the CFH window is the  becomes the final
     % covariance for instant k
     P{k,1} = CFH_P{end,1};
