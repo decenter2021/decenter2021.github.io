@@ -27,6 +27,8 @@ sidebar-downloads:
 sidebar-references:
 
 sidebar-about:
+  - title: "Project"
+    url: /about/#project
   - title: "Authors"
     url: /about/#authors
   - title: "Contact"
