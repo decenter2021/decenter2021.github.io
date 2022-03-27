@@ -7,6 +7,10 @@ sidebar:
   title: "About"
   nav: sidebar-about
 ---
+Project
+=====
+DECENTER toolbox is being developed within <a target="_blank" href ="https://decenterproject.weebly.com">project DECENTER</a>.
+
 Authors
 =====
 {% for author in site.data.authors %} {{author.name}}<sup>{{author.affiliation}}</sup> | {% if author.orcid %}<a itemprop="sameAs" target="_blank" content="{{author.orcid}}" href="{{author.orcid}}" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>{%endif%}{% if author.googlescholar %}<a target="_blank" itemprop="sameAs" href="{{author.googlescholar}}" style="vertical-align:top;"><img src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/17520148421579517848-512.png" style="width:1em;margin-right:.5em;"></a>{%endif%}<br>{% endfor %}
