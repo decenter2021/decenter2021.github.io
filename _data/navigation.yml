@@ -259,6 +259,22 @@ sidebar-kalmanFiniteHorizonLTI:
   - title: "References"
     url: "documentation/kalmanFiniteHorizonLTI/#references"
 
+sidebar-MHEMovingFiniteHorizonLTI:
+  - title: "Sintax"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#sintax"
+  - title: "Description"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#description"
+  - title: "Computational complexity"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#computational-complexity"
+  - title: "Input Arguments"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#input-arguments"
+  - title: "Output Arguments"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#output-arguments"
+  - title: "Examples"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#examples"
+  - title: "References"
+    url: "documentation/MHEMovingFiniteHorizonLTI/#references"
+
 sidebar-LQRFiniteHorizonLTI:
   - title: "Sintax"
     url: "documentation/LQRFiniteHorizonLTI/#sintax"
