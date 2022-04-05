@@ -25,7 +25,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -42,7 +42,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -61,7 +61,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -77,7 +77,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}

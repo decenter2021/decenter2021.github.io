@@ -24,7 +24,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -41,7 +41,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -61,7 +61,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -77,7 +77,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 3 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -96,7 +96,7 @@ excerpt: "Detailed simple examples for getting started with DECENTER."
       {% assign counter = counter | plus:1 %}
     {% endif %}
     {% if counter == 2 %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="grid" %}{% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
