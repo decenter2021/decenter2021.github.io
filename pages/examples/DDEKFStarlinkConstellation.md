@@ -509,16 +509,18 @@ end
 
 The **auxiliary functions** that are employed in the script above are defined in the main simulation script, made available in the **DECENTER toolbox**.
 
+***
+
 ### Results
 
 The evolution of the **position estimation error** with the use of relative measurements, making use of the **novel algorithm** proposed in [[1]](#references), for satellite 11, is shown below.
 {: .text-justify}
 
-<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-trace_vs_isl_orbit_sat11.svg" style="width:100%">
+<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-error_wrel_orbit_sat11.svg" style="width:100%">
 
 It is possible to note that, near the **poles**, there are **more relative measurement links**. Thus, near the poles, the **estimation performance increases**. This effect is also visible in the evolution of the trace of the estimation error covariance matrix and number of **satellites in ISL range**, for satellite 11.
 {: .text-justify}
-<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-error_wrel_orbit_sat11.svg" style="width:100%">
+<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-trace_vs_isl_orbit_sat11.svg" style="width:100%">
 
 
 # References
