@@ -509,6 +509,8 @@ end
 
 The **auxiliary functions** that are employed in the script above are defined in the main simulation script, made available in the **DECENTER toolbox**.
 
+***
+
 ### Results
 
 The evolution of the **position estimation error** with the use of relative measurements, making use of the **novel algorithm** proposed in [[1]](#references), for satellite 11, is shown below.
