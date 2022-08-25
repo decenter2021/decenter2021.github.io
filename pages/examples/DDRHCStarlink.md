@@ -520,7 +520,7 @@ The **auxiliary functions** that are employed in the script above are included i
 
 ### Results
 
-The evolution of the **global mean absolute error** (MAE) for semi-major axis, eccentricity, inclination, mean argument of latitude, and longitude of ascending node are shown below.
+The evolution of the **global mean absolute error** (MAE) for **semi-major axis**, **eccentricity**, **inclination**, **mean argument of latitude**, and **longitude of ascending node** is shown below.
 
 <div class="row">
   <div class="column">
@@ -540,7 +540,7 @@ The evolution of the **global mean absolute error** (MAE) for semi-major axis, e
   </div>
 </div>
 
-The evolution of the **mean absolute error** (MAE) for satellite 1 in semi-major axis, inclination, and accentricity is shown below.
+The evolution of the **mean absolute error** (MAE), for satellite 1, in **semi-major axis**, **inclination**, and **eccentricity** is shown below.
 
 <div class="row">
   <div class="column">
@@ -551,14 +551,14 @@ The evolution of the **mean absolute error** (MAE) for satellite 1 in semi-major
   </div>
 </div>
 
-The evolution of the 3-axis thrust input and trajectory of the error in mean argument of latitude and longitude of ascending node are shown below.
+The evolution of the 3-axis **thrust input** and **trajectory of the error** in mean argument of latitude and longitude of ascending node are shown below.
 
 <div class="row">
   <div class="column">
     <img src="/assets/img/RHC_usat1-eps-converted-to.pdf" style="width:100%">
   </div>
   <div class="column">
-    <img src="/assets/img/RHC_phasedistsat1-eps-converted-to.pdc" style="width:100%">
+    <img src="/assets/img/RHC_phasedistsat1-eps-converted-to.pdf" style="width:100%">
   </div>
 </div>
 
