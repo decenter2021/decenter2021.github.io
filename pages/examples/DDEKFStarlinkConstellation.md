@@ -18,7 +18,7 @@ tags:
   - estimation
   - ekf
 date: "2022-05-20"
-last_modified_at: "2022-05-20"
+last_modified_at: "2022-08-25"
 ---
 
 Application of a novel distributed decentralized EKF framework to the navigation of very large-scale constellations of satellites, illustrated in particular for a shell of the Starlink mega-constellation.
@@ -46,7 +46,7 @@ The **TUDAT application source-code** can be found at
 
 The <tt>.mat</tt> **output of a simulation** of roughly 10 full orbital periods can be **downloaded** (3.9 GB) <a target = 'blank' href = "https://drive.google.com/uc?export=download&id=15rWHJCAoboV3evRALkodtb09Jk_irWC4">here</a>.
 
-The **TUDAT application source-code** consists of a C++ script that simulates the orbital dynamics of a constellation of satellites. It also establishes a UDP connection with a server running on a MATLAB instance to obtain thruster actuation feedback. For more details on how to setup the simulation and on the intricacies of the thruster actuation feedback, see the <a target = 'blank' href = "">dedicated GitHub repository (available soon)</a>.
+The **TUDAT application source-code** consists of a C++ script that simulates the orbital dynamics of a constellation of satellites. It also establishes a UDP connection with a server running on a MATLAB instance to obtain thruster actuation feedback. For more details on how to setup the simulation and on the intricacies of the thruster actuation feedback, see the <a target = 'blank' href = "https://github.com/decenter2021/tudat-matlab-thrust-feedback">dedicated GitHub repository</a>.
 {: .text-justify}
 
 ***
