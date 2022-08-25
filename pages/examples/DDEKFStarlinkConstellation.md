@@ -26,7 +26,7 @@ Application of a novel distributed decentralized EKF framework to the navigation
 
 ***
 
-A novel distributed decentralized EKF framework for very large-scale networks was proposed in [[1]](#references). In this example, this solution is applied to the satellite mega-constellations navigation problem. An illustrative mega-constellation of a single shell inspired in the first shell of the Starlink constellation to be deployed is considered. The constellation is a Walker $$53.0º:1584/72/17$$. A snapshot of ground track and inter-satellite links (ISL) of the simulated constellation at 70 TDB seconds since J2000 is depicted below.
+A novel distributed decentralized EKF framework for very large-scale networks was proposed in [[1]](#references). In this example, this solution is applied to the satellite mega-constellation navigation problem. An illustrative mega-constellation of a single shell inspired in the first shell of the Starlink constellation to be deployed is considered. The constellation is a Walker $$53.0º:1584/72/17$$. A snapshot of ground track and inter-satellite links (ISL) of the simulated constellation at 70 TDB seconds since J2000 is depicted below.
 {: .text-justify}
 
 <img src="/assets/img/DDEKF_StarlinkConstellation_ground_track.png" style="width:100%">
