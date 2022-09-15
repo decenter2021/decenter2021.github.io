@@ -15,14 +15,14 @@ tags:
     - documentation
     - moving-horizon-estimation
 date: "2022-04-05"
-last_modified_at: "2022-04-05"
+last_modified_at: "2022-09-15"
 published: true
 ---
 
 # Sintax
 ~~~m
-[Kinf,Pinf] = MHEMovingFiniteHorizonLTI(A,C,Q,R,E,W)
-[Kinf,Pinf] = MHEMovingFiniteHorizonLTI(A,C,Q,R,E,W,opts)
+[Kinf,Pinf,Pseq] = MHEMovingFiniteHorizonLTI(A,C,Q,R,E,W)
+[Kinf,Pinf,Pseq] = MHEMovingFiniteHorizonLTI(A,C,Q,R,E,W,opts)
 ~~~
 ***
 
@@ -152,8 +152,9 @@ It is shown in [[2]](#references) that each iteration of the algorithm requires 
 
 # Output Arguments
 
-- ```K_inf```: $W_{ss} \times 1$ cell array with the steady-state filter gain matrix sequence $$\mathbf{K}_{\infty}(\tau), \tau = 1,...,W_{ss},$$
-- ```P_inf```: steady-state estimation error covariance matrix $\mathbf{P}_{\infty}$
+- ```Kinf```: $W_{ss} \times 1$ cell array with the steady-state filter gain matrix sequence $$\mathbf{K}_{\infty}(\tau), \tau = 1,...,W_{ss},$$
+- ```Pinf```: steady-state estimation error covariance matrix $\mathbf{P}_{\infty}$
+- ```Pseq```: $(W_{ss}+1) \times 1$ cell array of the covariance matrices throughout the window in the last iteration
 
 ***
 
