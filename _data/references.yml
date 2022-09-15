@@ -1,6 +1,6 @@
-- key: "Pedroso2021KalmanOSFHLTV"
-  harvardCitation: "Pedroso, L., Batista, P., Oliveira, P. and Silvestre, C., 2021. Discrete-time distributed Kalman filter design for networks of interconnected systems with linear time-varying dynamics. International Journal of Systems Science. doi:10.1080/00207721.2021.2002461."
-  url: "https://doi.org/10.1080/00207721.2021.2002461"
+- key: "Pedroso2022Reproducible"
+  harvardCitation: "Pedroso, L. and Batista, P., 2022. Reproducible low-cost flexible quadruple-tank process experimental setup for control educators, practitioners, and researchers. Journal of Process Control, 118, pp.82-94. doi:10.1016/j.jprocont.2022.08.010."
+  url: "https://doi.org/10.1016/j.jprocont.2022.08.010"
 
 - key: "Pedroso2021Traffic"
   harvardCitation: "Pedroso, L. and Batista, P., 2021. Decentralized store-and-forward based strategies for the signal control problem in large-scale congested urban road networks. Transportation Research Part C: Emerging Technologies, 132, p.103412. doi:10.1016/j.trc.2021.103412."
@@ -13,6 +13,10 @@
 - key: "Pedroso2021Efficient"
   harvardCitation: "Pedroso, L. and Batista, P., 2021. Efficient algorithm for the computation of the solution to a sparse matrix equation in distributed control theory. Mathematics, 9(13), p.1497. doi:10.3390/math9131497."
   url: "https://doi.org/10.3390/math9131497"
+
+- key: "Pedroso2021KalmanOSFHLTV"
+  harvardCitation: "Pedroso, L., Batista, P., Oliveira, P. and Silvestre, C., 2021. Discrete-time distributed Kalman filter design for networks of interconnected systems with linear time-varying dynamics. International Journal of Systems Science. doi:10.1080/00207721.2021.2002461."
+  url: "https://doi.org/10.1080/00207721.2021.2002461"
 
 - key: "Viegas2021Distributed"
   harvardCitation: "Viegas, D., Batista, P., Oliveira, P. and Silvestre, C., 2021. Distributed controller design and performance optimization for discrete‐time linear systems. Optimal Control Applications and Methods, 42(1), pp.126-143. doi:10.1002/oca.2669."

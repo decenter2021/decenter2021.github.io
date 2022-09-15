@@ -19,7 +19,7 @@ tags:
   - control
   - experimental
 date: "2022-05-22"
-last_modified_at: "2022-05-22"
+last_modified_at: "2022-09-15"
 ---
 {{page.excerpt}}
 
@@ -86,7 +86,10 @@ The **numeric simulation** results are shown below.
 
 
 # References
-[1] *Not published yet*
+[1] {% for paper in site.data.references%}{% if paper.key == "Pedroso2022Reproducible" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
+{: .text-justify}
+{% endif %}{% endfor %}
 
 [2] {% for paper in site.data.references%}{% if paper.key == "Pedroso2021LQROSLTV" %}
 <a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
