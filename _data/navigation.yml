@@ -321,3 +321,21 @@ sidebar-testDECENTER:
     url: "documentation/testDECENTER/#sintax"
   - title: "Description"
     url: "documentation/testDECENTER/#description"
+
+
+sidebar-example-mhemfh:
+  - title: "Introduction"
+    url: "examples/MHEMFH/#introduction"
+  - title: "Simulation Results"
+    url: "examples/MHEMFH/#simulation-results"
+    children:
+      - title: "Small network"
+        url: "examples/MHEMFH/#small-network"
+      - title: "Large-scale network"
+        url: "examples/MHEMFH/#large-scale-network"
+      - title: "Case of FH convergence issues"
+        url: "examples/MHEMFH/#case-of-fh-convergence-issues"
+      - title: "Large-scale network with weak couplings"
+        url: "examples/MHEMFH/#large-scale-network-with-weak-couplings"
+  - title: "References"
+    url: "examples/MHEMFH/#references"

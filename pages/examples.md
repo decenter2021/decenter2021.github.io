@@ -67,6 +67,7 @@ excerpt: "Meaningful examples for illustrating the power of DECENTER."
 {% endfor %}
 </div>
 <br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br>
+
 ### LTV systems
 <div class="grid__wrapper">
 {% assign sorted_posts = site.pages | sort:"date" | reverse %}
