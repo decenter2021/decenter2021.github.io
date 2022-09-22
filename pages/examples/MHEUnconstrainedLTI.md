@@ -16,8 +16,8 @@ tags:
   - moving-horizon-estimation
   - moving-finite-horizon
   - estimation
-date: "2022-09-19"
-last_modified_at: "2022-09-19"
+date: "2022-09-22"
+last_modified_at: "2022-09-22"
 ---
 
 {{page.excerpt}}
@@ -269,7 +269,7 @@ The performance of the different decentralized methods is graphically depicted b
 
 It is interesting to note that since the MFH method with $W_{ss} = 1$ and the OS method are equivalent, theire performance is the same.
 
-We choose $W_{ss} = 5$ henceforth. It is also interesting to see the evolution of the estimation error covariance throughout the last iteration of the MFH algorithm, i.e. $\mathbf{P}(\tau \mid \tau \mid k),\:\tau = k-W_{ss},\ldots,k$, which is the [third output of the MFH synthesis method](/documentation/MHEMovingFiniteHorizon/).
+We choose $W_{ss} = 5$ henceforth. It is also interesting to see the evolution of the estimation error covariance throughout the last iteration of the MFH algorithm, i.e. $\mathbf{P}(\tau \mid \tau \mid k), \tau = k-W_{ss},\ldots,k$, which is the [third output of the MFH synthesis method](/documentation/MHEMovingFiniteHorizon/).
 
 <p style="text-align:center;"><img src="/assets/img/mhemfh_small_net_ev_trace.svg" width="70%"></p>
 
@@ -279,6 +279,17 @@ Notice that:
 - But, it allows for a **very good estimate at the end of the window**
 - Because the intermediate estimates **do not compromise future performance**
 - This is the principle behind the **performance improvement** of the **MFH method**
+
+Before deploying the MFH synthesis over the network, one can assess its **stability** by making use of the stability condition in [[Section II.B,1]](#references).
+~~~m
+>> model = 1;
+>> Wss = 5;
+>> stability_mfh(model,Wss);
+~~~
+~~~text
+MFH synthesis is stable.
+~~~
+Which confirms that the **MFH synthesis** that was obtained is **stable**.
 
 Let's assess the performance of the different estimation solutions resorting to Monte Carlo simulations:
 ~~~m
@@ -317,6 +328,7 @@ The steady-state trace of the estimation error covariance matrix is depicted bel
 **Conlusions**:
 - The MFH method **converged** for different window sizes
 - The MFH method seems to have **faster synthesis times** than the FH method
+- It was confirmed that the MFH gain synthesis is **stable**
 - The MFH method **performs better** than state-of-the-art decentralized Luenberger-based filters
 - The **principle** behind the performance of the MFH is evident for this example
 - The use of the second best performing method (FH) incurs in a **performance penalty** of  $+5.39\%$
@@ -515,6 +527,17 @@ Similarly to the previous synthetic network ([Small network](#small-network)), w
 
 <p style="text-align:center;"><img src="/assets/img/mhemfh_large_net_ev_trace.svg" width="70%"></p>
 
+Before deploying the MFH synthesis over the network, one can assess its **stability** by making use of the stability condition in [[Section II.B,1]](#references).
+~~~m
+>> model = 40;
+>> Wss = 5;
+>> stability_mfh(model,Wss);
+~~~
+~~~text
+MFH synthesis is stable.
+~~~
+Which confirms that the **MFH synthesis** that was obtained is **stable**.
+
 Lastly, we can check if the PMHE1 method is guaranteed to converge (with a window size equal to the size chosen for the MFH method)
 ~~~m
 >> farina_et_al_2010_convergence(40,5);
@@ -605,6 +628,7 @@ We can confirm that it is **zero-mean** and the calculated estimation covariance
 - The **MFH** method **converges** for different window sizes
 - The **MFH** method supports **correlated process noise**
 - The **MFH** method is **scalable**
+- It was confirmed that the MFH gain synthesis is **stable**
 - For low window sizes the **MFH** method is significantly **faster to synthesize** than the FH method
 - The MFH method **performs better** than state-of-the-art decentralized Luenberger-based filters
 - The use of the second best performing method (FH) incurs in a **performance penalty** of  $+7.59\%$
@@ -697,6 +721,17 @@ Trace MFH/C: 2.601179
 For W_ss = 2 (tr = 6722.96) elapsed time is 74398.1 seconds.
 ~~~
 
+Before deploying the MFH synthesis over the network, one can assess its **stability** by making use of the stability condition in [[Section II.B,1]](#references).
+~~~m
+>> model = 42;
+>> Wss = 2;
+>> stability_mfh(model,Wss);
+~~~
+~~~text
+MFH synthesis is stable.
+~~~
+Which confirms that the **MFH synthesis** that was obtained is **stable**.
+
 Lastly, we find that the **PMHE1** method **is guaranteed to converge** (with a window size equal to the size chosen for the MFH method)
 ~~~m
 >> farina_et_al_2010_convergence(42,2);
@@ -720,6 +755,7 @@ The average of the error norm for each of the methods is depicted below
 **Conclusions**:
 - The **FH** method **could not be synthesized** in a reasonable amount of time for $N=1000$ systems
 - The **MFH** method is **scalable**
+- It was confirmed that the MFH gain synthesis is **stable**
 - The use of the second best performing method (PMHE1) incurs in a **performance penalty** of  $+61.54\%$
 
 ***
