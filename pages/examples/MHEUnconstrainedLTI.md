@@ -16,8 +16,8 @@ tags:
   - moving-horizon-estimation
   - moving-finite-horizon
   - estimation
-date: "2022-09-22"
-last_modified_at: "2022-09-22"
+date: "2022-09-24"
+last_modified_at: "2022-09-24"
 ---
 
 {{page.excerpt}}
@@ -636,36 +636,6 @@ We can confirm that it is **zero-mean** and the calculated estimation covariance
 
 ***
 
-## Case of FH convergence issues
-
-Let's generate another synthetic network with $N = 500$ systems. This network was generated randomly using the function
-~~~m
->> rng_seed = 39;
->> generate_random_network(rng_seed);
-~~~
-~~~text
-Global state size: 1000
-Maximum absolute eigenvalue: 1.33875
-~~~
-
-We obtain the following topology
-<p style="text-align:center;"><img src="/assets/img/mhemfh_large_FHdiv_net.pdf" width="80%"></p>
-
-The centralized and OS gains can be computed similarly to the previous synthetic networks. Let's attempt to synthesize the FH algorithm
-
-~~~m
-
-~~~
-~~~text
-
-~~~
-
-**Conclusions**:
-- The **FH** method sometimes **fails to converge** to a constant gain
-- In those cases the **MFH** still coverges
-
-***
-
 ## Large-scale network with weak couplings
 
 
@@ -757,6 +727,270 @@ The average of the error norm for each of the methods is depicted below
 - The **MFH** method is **scalable**
 - It was confirmed that the MFH gain synthesis is **stable**
 - The use of the second best performing method (PMHE1) incurs in a **performance penalty** of  $+61.54\%$
+
+***
+
+## Case of FH convergence issues
+
+Let's generate another synthetic network with $N = 500$ systems. This network was generated randomly using the function
+~~~m
+>> rng_seed = 47;
+>> generate_random_network(rng_seed);
+~~~
+~~~text
+Global state size: 1000
+Maximum absolute eigenvalue: 1.27932
+~~~
+
+We obtain the following topology
+<p style="text-align:center;"><img src="/assets/img/mhemfh_large_FHdiv_net.pdf" width="80%"></p>
+
+The centralized and OS gains can be computed similarly to the previous synthetic networks.
+~~~m
+>> model = 47;
+>> synthesis_luenberger(model);
+~~~
+~~~text
+----------------------------------------------------------------------------------
+Computing centralized kalman filter with: epsl = 1e-05 | maxIt = 1000.
+Convergence reached with: epsl = 1e-05 | maxIt = 1000.
+A total of 130 iterations were run.
+----------------------------------------------------------------------------------
+Elapsed time is 15.921722 seconds.
+Trace centralized: 822.287978
+----------------------------------------------------------------------------------
+Running one-step algorithm with: epsl = 0.0001 | maxIt = 10000.
+Convergence reached with: epsl = 0.0001 | maxIt = 10000.
+A total of 185 iterations were run.
+----------------------------------------------------------------------------------
+Elapsed time is 447.193402 seconds.
+Trace OS: 3696.130373
+Trace OS/C: 4.494934
+~~~
+
+
+Let's attempt to synthesize the FH algorithm
+~~~m
+>> synthesis_fh(47,1e-2,100,20);
+~~~
+~~~text
+----------------------------------------------------------------------------------
+Running finite-horizon algorithm with:
+epsl = 0.01 | W = 100 | maxOLIt = 20 | findWindowSize = false.
+Outer-loop initialization.
+	Outer-loop initialization iteration: 1.
+	(...)
+	Outer-loop initialization iteration: 100.
+Outer-loop iteration 1.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 1 finished.
+Window convergence within 4.99137e-05.
+Maximum absolute CL eigenvalue: 1.02226.
+Trace: 2944.17
+LTI gain convergence within Inf.
+Outer-loop iteration 2.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 2 finished.
+Window convergence within 3.35438e-05.
+Maximum absolute CL eigenvalue: 0.974221.
+Trace: 2750.14
+LTI gain convergence within 0.0659041.
+Outer-loop iteration 3.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 3 finished.
+Window convergence within 1.36555e-06.
+Maximum absolute CL eigenvalue: 0.974231.
+Trace: 2683.93
+LTI gain convergence within 0.0240748.
+Outer-loop iteration 4.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 4 finished.
+Window convergence within 1.22254e-06.
+Maximum absolute CL eigenvalue: 0.974207.
+Trace: 2647.45
+LTI gain convergence within 0.0135906.
+Outer-loop iteration 5.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 5 finished.
+Window convergence within 5.80219e-05.
+Maximum absolute CL eigenvalue: 0.97423.
+Trace: 2788.91
+LTI gain convergence within 0.0534327.
+Outer-loop iteration 6.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 6 finished.
+Window convergence within 1.0339e-05.
+Maximum absolute CL eigenvalue: 0.976927.
+Trace: 2306.17
+LTI gain convergence within 0.173094.
+Outer-loop iteration 7.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 7 finished.
+Window convergence within 0.000820389.
+Maximum absolute CL eigenvalue: 1.04333.
+Trace: 1978.28
+LTI gain convergence within 0.142179.
+Outer-loop iteration 8.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 8 finished.
+Window convergence within 0.000166565.
+Maximum absolute CL eigenvalue: 1.52682.
+Trace: 1757.67
+LTI gain convergence within 0.111517.
+Outer-loop iteration 9.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 9 finished.
+Window convergence within 1.97906e-05.
+Maximum absolute CL eigenvalue: 1.01125.
+Trace: 1575.71
+LTI gain convergence within 0.103522.
+Outer-loop iteration 10.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 10 finished.
+Window convergence within 4.43926e-05.
+Maximum absolute CL eigenvalue: 1.01106.
+Trace: 1533.47
+LTI gain convergence within 0.0268107.
+Outer-loop iteration 11.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 11 finished.
+Window convergence within 0.000609564.
+Maximum absolute CL eigenvalue: 1.01723.
+Trace: 1511.44
+LTI gain convergence within 0.0143601.
+Outer-loop iteration 12.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 12 finished.
+Window convergence within 6.1706e-05.
+Maximum absolute CL eigenvalue: 1.01814.
+Trace: 1495.83
+LTI gain convergence within 0.0103318.
+Outer-loop iteration 13.
+	Inner-loop iteration 1.
+	(...)
+	Inner-loop iteration 100.
+Outer-loop iteration 13 finished.
+Window convergence within 0.0002569.
+Maximum absolute CL eigenvalue: 1.0185.
+Trace: 1490.23
+LTI gain convergence within 0.00374232.
+Convergence reached with: epsl = 0.01 | W = 100 | maxOLIt = 20
+A total of 13 outer loop iterations were run, out of which 100.0% converged within
+the specified minimum improvement.
+----------------------------------------------------------------------------------
+Elapsed time is 54070.481776 seconds.
+Trace FH: 1490.230726
+Trace FH/C: 1.812298
+Maximum absolute CL eigenvalue: 1.018502
+~~~
+
+The steady-state $\mathrm{tr}(\mathbf{P}(k))$ converged within the specified minimum improvement, but the gains **do not converge towards a steady-state gain**, thus, the finite-horizon synthesis fails. In fact, the closed-loop error dynamics matrix is **unstable**
+~~~m
+>> load('./models/model47/synth_FH.mat')
+>> max(abs(eig((eye(size(A))-KFH*C)*A)))
+~~~
+~~~text
+ans =
+    1.0185
+~~~
+
+Let's attempt to synthesize the MFH method
+
+~~~m
+>> for W = 1:5
+synthesis_mfh(47,1e-4,W,1e3);
+end
+~~~
+~~~text
+----------------------------------------------------------------------------------
+Running moving finite horizon algorithm with:
+epsl_inf = 0.0001 | W = 1 | maxIt = 1000 .
+Convergence reached with: epsl_inf = 0.0001 | W = 1 | maxOLIt = 1000
+A total of 185 outer loop iterations were run.
+----------------------------------------------------------------------------------
+Trace MFH: 3696.130373
+Trace MFH/C: 4.494934
+For W_ss = 1 (tr = 3696.13) elapsed time is 1191.84 seconds.
+----------------------------------------------------------------------------------
+Running moving finite horizon algorithm with:
+epsl_inf = 0.0001 | W = 2 | maxIt = 1000 .
+Convergence reached with: epsl_inf = 0.0001 | W = 2 | maxOLIt = 1000
+A total of 192 outer loop iterations were run.
+----------------------------------------------------------------------------------
+Trace MFH: 2750.737752
+Trace MFH/C: 3.345224
+For W_ss = 2 (tr = 2750.74) elapsed time is 2805.09 seconds.
+----------------------------------------------------------------------------------
+Running moving finite horizon algorithm with:
+epsl_inf = 0.0001 | W = 3 | maxIt = 1000 .
+Convergence reached with: epsl_inf = 0.0001 | W = 3 | maxOLIt = 1000
+A total of 199 outer loop iterations were run.
+----------------------------------------------------------------------------------
+Trace MFH: 2617.781922
+Trace MFH/C: 3.183534
+For W_ss = 3 (tr = 2617.78) elapsed time is 5026.36 seconds.
+----------------------------------------------------------------------------------
+Running moving finite horizon algorithm with:
+epsl_inf = 0.0001 | W = 4 | maxIt = 1000 .
+Convergence reached with: epsl_inf = 0.0001 | W = 4 | maxOLIt = 1000
+A total of 194 outer loop iterations were run.
+----------------------------------------------------------------------------------
+Trace MFH: 2572.792649
+Trace MFH/C: 3.128822
+For W_ss = 4 (tr = 2572.79) elapsed time is 8524.05 seconds.
+----------------------------------------------------------------------------------
+Running moving finite horizon algorithm with:
+epsl_inf = 0.0001 | W = 5 | maxIt = 1000 .
+Convergence reached with: epsl_inf = 0.0001 | W = 5 | maxOLIt = 1000
+A total of 196 outer loop iterations were run.
+----------------------------------------------------------------------------------
+Trace MFH: 2531.702569
+Trace MFH/C: 3.078851
+For W_ss = 5 (tr = 2531.7) elapsed time is 12877.1 seconds.
+~~~
+
+Note that the MFH method converges and has **stable errror dynamics**
+~~~m
+>> model = 47;
+>> for W = 1:5
+stability_mfh(model,W);
+end
+~~~
+~~~text
+MFH synthesis is stable.
+MFH synthesis is stable.
+MFH synthesis is stable.
+MFH synthesis is stable.
+MFH synthesis is stable.
+~~~
+
+**Conclusions**:
+- The **FH** method sometimes **fails to converge** to a constant gain
+- In those cases the **MFH** still coverges
 
 ***
 
