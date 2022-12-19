@@ -41,7 +41,7 @@ The realistic nonlinear numeric simulation is computed making use of the high fi
 
 The control feedback computation is carried out in **MATLAB**. The simulation environment relies on an **interface** between a C++ TUDAT application and MATLAB to define a thrust feedback control law. The architecture of the overall environment is shown below.
 
-<img src="/assets/img/DDRHC_simulation_scheme.pdf" style="width:50%">
+<img src="/assets/img/DDRHC_simulation_scheme.svg" style="width:50%">
 
 This interface is powered by the **tudat-matlab-thrust-feedback** package available at [github.com/decenter2021/tudat-matlab-thrust-feedback](https://github.com/decenter2021/tudat-matlab-thrust-feedback).
 {: .text-justify}
@@ -524,16 +524,16 @@ The evolution of the **global mean absolute error** (MAE) for **semi-major axis*
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/RHC_a-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_a-eps-converted-to.svg" style="width:100%">
   </div>
   <div class="column">
-    <img src="/assets/img/RHC_ei-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_ei-eps-converted-to.svg" style="width:100%">
   </div>
 </div>
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/RHC_uOmega-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_uOmega-eps-converted-to.svg" style="width:100%">
   </div>
   <div class="column">
 
@@ -544,10 +544,10 @@ The evolution of the **mean absolute error** (MAE), for satellite 1, in **semi-m
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/RHC_asat1-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_asat1-eps-converted-to.svg" style="width:100%">
   </div>
   <div class="column">
-    <img src="/assets/img/RHC_eisat1-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_eisat1-eps-converted-to.svg" style="width:100%">
   </div>
 </div>
 
@@ -555,10 +555,10 @@ The evolution of the 3-axis **thrust input** and **trajectory of the error** in 
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/RHC_usat1-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_usat1-eps-converted-to.svg" style="width:100%">
   </div>
   <div class="column">
-    <img src="/assets/img/RHC_phasedistsat1-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/RHC_phasedistsat1-eps-converted-to.svg" style="width:100%">
   </div>
 </div>
 

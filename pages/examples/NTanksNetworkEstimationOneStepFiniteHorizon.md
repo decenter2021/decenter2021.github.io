@@ -9,7 +9,7 @@ sidebar:
   title: "Examples"
   nav: sidebar-examples
 header:
-  teaser: "/assets/img/NTanksNetworkControlOneStepSchemeN.pdf"
+  teaser: "/assets/img/NTanksNetworkControlOneStepSchemeN.svg"
 tags:
   - example
   - ltv
@@ -39,7 +39,7 @@ where $A_i$ and $a_i$ are the cross sections of tank $i$ and of its outlet hole,
 {: .text-justify}
 
 {:refdef: style="display: block; margin-left: auto; margin-right: auto; width: 70%;"}
-![image-title-here](/assets/img/NTanksNetworkControlOneStepSchemeN.pdf){:class="img-responsive"}
+![image-title-here](/assets/img/NTanksNetworkControlOneStepSchemeN.svg){:class="img-responsive"}
 {: refdef}
 
 The application of the algorithms to this network shows their scalability.

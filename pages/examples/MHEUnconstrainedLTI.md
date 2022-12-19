@@ -348,7 +348,7 @@ Maximum absolute eigenvalue: 1.21061
 ~~~
 
 This is one of the systems briefly used in [[1]](#references). We obtain the following topology
-<p style="text-align:center;"><img src="/assets/img/mhemfh_large_net.pdf" width="80%"></p>
+<p style="text-align:center;"><img src="/assets/img/mhemfh_large_net.svg" width="80%"></p>
 
 
 Let's synthesize the centralized and one-step methods with
@@ -654,7 +654,7 @@ Maximum absolute eigenvalue: 1.13125
 ~~~
 
 We obtain the following topology
-<p style="text-align:center;"><img src="/assets/img/mhemfh_large_weak_net.pdf" width="80%"></p>
+<p style="text-align:center;"><img src="/assets/img/mhemfh_large_weak_net.svg" width="80%"></p>
 
 Lets's synthesize the centralized and OS methods
 
@@ -743,7 +743,7 @@ Maximum absolute eigenvalue: 1.27932
 ~~~
 
 We obtain the following topology
-<p style="text-align:center;"><img src="/assets/img/mhemfh_large_FHdiv_net.pdf" width="80%"></p>
+<p style="text-align:center;"><img src="/assets/img/mhemfh_large_FHdiv_net.svg" width="80%"></p>
 
 The centralized and OS gains can be computed similarly to the previous synthetic networks.
 ~~~m

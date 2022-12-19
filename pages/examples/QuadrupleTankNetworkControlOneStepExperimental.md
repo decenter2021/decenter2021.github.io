@@ -65,10 +65,10 @@ The **experimental** results, which are analysed carefully in [[1]](#references)
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_exp_h-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_exp_h-eps-converted-to.svg" style="width:100%">
   </div>
   <div class="column">
-    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_exp_u-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_exp_u-eps-converted-to.svg" style="width:100%">
   </div>
 </div>
 
@@ -77,10 +77,10 @@ The **numeric simulation** results are shown below.
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_sim_h-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_sim_h-eps-converted-to.svg" style="width:100%">
   </div>
   <div class="column">
-    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_sim_u-eps-converted-to.pdf" style="width:100%">
+    <img src="/assets/img/ExperimentalQuadrupleTankNetworkControlOneStep_DLQR_sim_u-eps-converted-to.svg" style="width:100%">
   </div>
 </div>
 

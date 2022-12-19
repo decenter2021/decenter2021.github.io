@@ -9,7 +9,7 @@ sidebar:
   title: "Examples"
   nav: sidebar-examples
 header:
-  teaser: "/assets/img/NTanksNetworkControlOneStepScheme4.pdf"
+  teaser: "/assets/img/NTanksNetworkControlOneStepScheme4.svg"
 tags:
   - example
   - mpc
@@ -44,7 +44,7 @@ where $A_i$ and $a_i$ are the cross sections of tank $i$ and of its outlet hole,
 {: .text-justify}
 
 {:refdef: style="display: block; margin-left: auto; margin-right: auto; width: 50%;"}
-![image-title-here](/assets/img/NTanksNetworkControlOneStepScheme4.pdf){:class="img-responsive"}
+![image-title-here](/assets/img/NTanksNetworkControlOneStepScheme4.svg){:class="img-responsive"}
 {: refdef}
 
 

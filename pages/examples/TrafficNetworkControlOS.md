@@ -9,7 +9,7 @@ sidebar:
   title: "Examples"
   nav: sidebar-examples
 header:
-  teaser: "/assets/img/roundabout_traff_net-eps-converted-to.pdf"
+  teaser: "/assets/img/roundabout_traff_net-eps-converted-to.svg"
 tags:
   - example
   - mpc
@@ -32,11 +32,11 @@ open TrafficNetworkControlOS
 Consider a traffic network composed of **links** and **signalized junctions**. For each junction, there is a set of **stages**. Each stage has an associated **green time**, during which a set of links that are directed towards that junction are given right of way. In this example the traffic network topology is represented by a **directed graph**. In this framework, each junction is represented by a vertex and each link by a directed edge. For example, the following illustrative traffic network (Fig. from [[1]](#references))
 {: .text-justify}
 {:refdef: style="display: block; margin-left: auto; margin-right: auto; width: 50%;"}
-![image-title-here](/assets/img/roundabout_traff_net-eps-converted-to.pdf){:class="img-responsive"}
+![image-title-here](/assets/img/roundabout_traff_net-eps-converted-to.svg){:class="img-responsive"}
 {: refdef}
 can be graphically represented as a directed graph as (Fig. from [[1]](#references))
 {:refdef: style="display: block; margin-left: auto; margin-right: auto; width: 50%;"}
-![image-title-here](/assets/img/ill_traff_net.pdf){:class="img-responsive"}
+![image-title-here](/assets/img/ill_traff_net.svg){:class="img-responsive"}
 {: refdef}
 
 The convention followed to model the topology of the traffic network according to this framework is detailed in [[Section 2.1, 1]](#references). In this example, the network dynamics are modelled making use of the **store-and-forward model**, which is a linear macroscopic vehicle dynamics model. This model is thoroughly detailed in [[Section 2.1, 1]](#references) and, in particular for the illustrative network above, in [[Section 2.3, 1]](#references).
