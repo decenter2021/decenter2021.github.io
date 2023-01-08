@@ -49,4 +49,4 @@ SOFTWARE.
 <hr>
 Release notes
 =====
-{% assign lastestR = 1 %}{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title" | reverse%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "release"%}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 1 %}{% if isFirst == 0 %}{% if lastestR == 1 %} (latest release){% assign lastestR = 1 %}{% endif %};<br>{% endif %}{% assign isFirst = 0 %}[{{post.shortTitle}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}.
+{% assign lastestR = 1 %}{% assign isFirst = 1 %}{% assign sorted_posts = site.pages | sort:"title" | reverse%}{% for post in sorted_posts %}{% assign counter = 0 %}{% for tag in post.tags %}{% if tag == "release"%}{% assign counter = counter | plus:1 %}{% endif %}{% if counter == 1 %}{% if isFirst == 0 %}{% if lastestR == 1 %} (latest release){% assign lastestR = 0 %}{% endif %};<br>{% endif %}{% assign isFirst = 0 %}[{{post.shortTitle}}]({{post.permalink}}){% endif %}{% endfor %}{% endfor %}.
