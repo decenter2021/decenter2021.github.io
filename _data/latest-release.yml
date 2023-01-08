@@ -1,4 +1,4 @@
 - name: "R20230108"
   tag: "v1.2.1"
-  urlZip: "https://github.com/decenter2021/decenter/archive/refs/tags/v1.2.1.zip"
+  urlZip: "https://github.com/decenter2021/decenter/archive/refs/tags/1.2.1.zip"
   directory: "decenter-1.2.1"
