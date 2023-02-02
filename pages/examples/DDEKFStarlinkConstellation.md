@@ -18,7 +18,7 @@ tags:
   - estimation
   - ekf
 date: "2022-05-20"
-last_modified_at: "2022-08-25"
+last_modified_at: "2023-02-02"
 ---
 
 Application of a novel distributed decentralized EKF framework to the navigation of very large-scale constellations of satellites, illustrated in particular for a shell of the Starlink mega-constellation.
@@ -26,7 +26,7 @@ Application of a novel distributed decentralized EKF framework to the navigation
 
 ***
 
-A novel distributed decentralized EKF framework for very large-scale networks was proposed in [[1]](#references). In this example, this solution is applied to the satellite mega-constellation navigation problem. An illustrative mega-constellation of a single shell inspired in the first shell of the Starlink constellation to be deployed is considered. The constellation is a Walker $$53.0º:1584/72/17$$. A snapshot of ground track and inter-satellite links (ISL) of the simulated constellation at 70 TDB seconds since J2000 is depicted below.
+A novel distributed decentralized EKF framework for very large-scale networks was proposed in [[1]](#references). In this example, this solution is applied to the satellite mega-constellation navigation problem. An illustrative mega-constellation of a single shell inspired in the first shell of the Starlink constellation to be deployed is considered. The constellation is a Walker $$53.0º:1584/72/17$$. A snapshot of ground track and inter-satellite links (ISL) of the simulated constellation at 0 TDB seconds since J2000 is depicted below.
 {: .text-justify}
 
 <img src="/assets/img/DDEKF_StarlinkConstellation_ground_track.png" style="width:100%">
@@ -44,7 +44,7 @@ The **TUDAT application source-code** can be found at
 
 <tt>Examples/DistributedDecentralizedEKFStarlinkConstellation/tudatSimulation</tt>.
 
-The <tt>.mat</tt> **output of a simulation** of roughly 10 full orbital periods can be **downloaded** (3.9 GB) <a target = 'blank' href = "https://drive.google.com/uc?export=download&id=15rWHJCAoboV3evRALkodtb09Jk_irWC4">here</a>.
+The <tt>.mat</tt> **output of a simulation** of roughly 1 full orbital period can be **downloaded** (419 MB) <a target = 'blank' href = "https://drive.google.com/file/d/1Mt2A949j-6gmmnWy7pZAl2Q5o_JtP4QC/view?usp=share_link">here</a>.
 
 The **TUDAT application source-code** consists of a C++ script that simulates the orbital dynamics of a constellation of satellites. It also establishes a UDP connection with a server running on a MATLAB instance to obtain thruster actuation feedback. For more details on how to setup the simulation and on the intricacies of the thruster actuation feedback, see the <a target = 'blank' href = "https://github.com/decenter2021/tudat-matlab-thrust-feedback">dedicated GitHub repository</a>.
 {: .text-justify}
@@ -57,7 +57,7 @@ The main steps of the simulation are described below. Jump to [Results](#results
 To open this example execute the following command in the MATLAB command window
 {: .text-justify}
 ~~~m
-open DDEKFStarlinkConstellation
+open DDEKFConstellationCart
 ~~~
 
 First, **initialize** variables and **import** simulation data
@@ -68,9 +68,11 @@ numberOfSatellitesPerPlane = 22;
 % Maximum communication distance normalized by the arc length between
 % staellites on the same orbit
 ISLRange = 750e3;
+minInNeighbourhood = 1;
+maxInNeighbourhood = 3;
 semiMajorAxis = 6921000;
-% Number of satellites
 
+% Number of satellites
 N = numberOfPlanes*numberOfSatellitesPerPlane;
 
 % Init dimensions of the dynamics of each satellite
@@ -80,10 +82,10 @@ fprintf("Constellation defined.\n");
 
 %% Simulation
 Ts = 1; % Sampling time (s)
-Tsim = 10;%5730;
+Tsim = 5730;
 ItSim = Tsim/Ts+1; % One week
 % Load true data
-load('./data/output_2022_01_22.mat','x');
+load('./data/output_orb_2023_01_15.mat','x');
 
 % Reduce dimension of imported data arrays
 parfor i = 1:N
@@ -181,12 +183,19 @@ for t = 1:ItSim-1
         aux(:,i) = x_t1(:,i);
     end
     parfor i = 1:N
-        FimNew{i,1} = LEOConstellationMeasurementGraph(i,aux,ISLRange);
+        % Before limited number of neighbors
+        % FimNew{i,1} = LEOConstellationMeasurementGraph(i,aux,ISLRange);
+        % After limited number of neighbors
+        FimNew{i,1} = LEOConstellationMeasurementGraph_limited(i,aux,ISLRange);
     end
 
     %% Step 3,4 - Communication
     %% Step 5 - Topology synch
-    FimNew = LEOConstellationMeasurementGraphSynch(FimNew);
+    % Before limited number of neighbors
+    FimNew = LEOConstellationMeasurementGraphSynch(FimNew);    
+    % After limited number of neighbors
+    %FimNew = LEOConstellationMeasurementGraphSynch_limited(FimNew,minInNeighbourhood,maxInNeighbourhood);
+
     %% Step 6 - Update filtered covariance
     % P(t|t)
     if t > 1
@@ -513,14 +522,14 @@ The **auxiliary functions** that are employed in the script above are defined in
 
 ### Results
 
-The evolution of the **position estimation error** with the use of relative measurements, making use of the **novel algorithm** proposed in [[1]](#references), for satellite 11, is shown below.
+The evolution of the **position estimation error** with the use of relative measurements, making use of the **novel algorithm** proposed in [[1]](#references), for satellite 1, is shown below.
 {: .text-justify}
 
-<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-error_wrel_orbit_sat11.svg" style="width:100%">
+<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-error_wrel_orbit_sat1.svg" style="width:100%">
 
-It is possible to note that, near the **poles**, there are **more relative measurement links**. Thus, near the poles, the **estimation performance increases**. This effect is also visible in the evolution of the trace of the estimation error covariance matrix and number of **satellites in ISL range**, for satellite 11.
+It is possible to note that, near the **poles**, there are **more relative measurement links**. Thus, near the poles, the **estimation performance increases**. This effect is also visible in the evolution of the trace of the estimation error covariance matrix and number of **satellites in ISL range**, for satellite 1.
 {: .text-justify}
-<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-trace_vs_isl_orbit_sat11.svg" style="width:100%">
+<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track-trace_vs_isl_orbit_sat1.svg" style="width:100%">
 
 
 # References
