@@ -17,7 +17,7 @@ tags:
   - moving-finite-horizon
   - estimation
 date: "2022-09-24"
-last_modified_at: "2022-09-24"
+last_modified_at: "2023-02-12"
 ---
 
 {{page.excerpt}}
@@ -995,7 +995,10 @@ MFH synthesis is stable.
 ***
 
 # References
-[1] *Not published yet*
+[1] {% for paper in site.data.references%}{% if paper.key == "Pedroso2023Decentralized" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
+{: .text-justify}
+{% endif %}{% endfor %}
 
 [2] {% for paper in site.data.references%}{% if paper.key == "Viegas2018Discrete" %}
 <a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
