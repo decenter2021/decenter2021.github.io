@@ -1,3 +1,7 @@
+- key: "Pedroso2023Decentralized"
+  harvardCitation: "Pedroso, L. and Batista, P., 2023. Decentralized moving horizon estimation for large-scale networks of interconnected unconstrained linear systems. IEEE Transactions on Control of Network Systems, doi: 10.1109/TCNS.2023.3244086."
+  url: "https://doi.org/10.1109/TCNS.2023.3244086"
+
 - key: "Pedroso2022Reproducible"
   harvardCitation: "Pedroso, L. and Batista, P., 2022. Reproducible low-cost flexible quadruple-tank process experimental setup for control educators, practitioners, and researchers. Journal of Process Control, 118, pp.82-94. doi:10.1016/j.jprocont.2022.08.010."
   url: "https://doi.org/10.1016/j.jprocont.2022.08.010"
