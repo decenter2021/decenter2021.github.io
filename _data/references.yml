@@ -1,3 +1,11 @@
+- key: "PedrosoBatista2023DistributedRHC"
+  harvardCitation: "Pedroso, L. and Batista, P., 2023. Distributed decentralized receding horizon control for very large-scale networks with application to satellite mega-constellations. Control Engineering Practice, 141, pp. 105728. doi: 10.1016/j.conengprac.2023.105728."
+  url: "https://www.sciencedirect.com/science/article/pii/S0967066123002976"
+
+- key: "PedrosoBatista2023DistributedEKF"
+  harvardCitation: "Pedroso, L. and Batista, P., 2023. Distributed decentralized EKF for very large-scale networks with application to satellite mega-constellations navigation', Control Engineering Practice, 135, pp. 105509. doi: 10.1016/j.conengprac.2023.105509."
+  url: "https://www.sciencedirect.com/science/article/pii/S0967066123000783"
+
 - key: "Pedroso2023Decentralized"
   harvardCitation: "Pedroso, L. and Batista, P., 2023. Decentralized moving horizon estimation for large-scale networks of interconnected unconstrained linear systems. IEEE Transactions on Control of Network Systems, doi: 10.1109/TCNS.2023.3244086."
   url: "https://doi.org/10.1109/TCNS.2023.3244086"

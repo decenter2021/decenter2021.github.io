@@ -30,7 +30,7 @@ A novel distributed decentralized Receding Horizon Control (RHC) for very large-
 {: .text-justify}
 
 
-<img src="/assets/img/DDRHC_StarlinkConstellation_ground_track.png" style="width:100%">
+<img src="/assets/img/DDEKF_StarlinkConstellation_ground_track.png" style="width:100%">
 
 
 ***
@@ -565,4 +565,7 @@ The evolution of the 3-axis **thrust input** and **trajectory of the error** in 
 For a thorough analysis of these results, see [[1]](#references).
 
 # References
-[1] *Not published yet*
+[1] {% for paper in site.data.references%}{% if paper.key == "PedrosoBatista2023DistributedRHC" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
+{: .text-justify}
+{% endif %}{% endfor %}

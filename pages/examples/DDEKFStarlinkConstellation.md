@@ -533,4 +533,7 @@ It is possible to note that, near the **poles**, there are **more relative measu
 
 
 # References
-[1] *Not published yet*
+[1] {% for paper in site.data.references%}{% if paper.key == "PedrosoBatista2023DistributedEKF" %}
+<a href="{{paper.url}}" target="_blank">{{paper.harvardCitation}}</a>
+{: .text-justify}
+{% endif %}{% endfor %}
